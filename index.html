@@ -17,19 +17,33 @@
   </head>
   <body>
     <div id="title_overlay">
-        <section id="location">
-          <img id="logo" src="static/images/eatntravel.png"></img>
-          <p id="address">
-            1D Ruo Do Pina<br>
-            Funchal, Madeira
-          </p>
-        </section>
+        <div id="ctrl">
+          <input id="ctrl_home" type="radio" name="gender" value="male" checked><label for="ctrl_home">Home</label><input id="ctrl_menu" type="radio" name="gender" value="female"><label for="ctrl_menu">Menu</label>
+        </div>
+        <ul id="cards">
+          <li id="location">
+            <img id="logo" src="static/images/eatntravel.png"></img>
+            <p id="address">
+              1D Ruo Do Pina<br>
+              Funchal, Madeira
+            </p>
+          </li>
+          <li id="menu">
+            <img id="logo" src="static/images/eatntravel.png"></img>
+            <p id="address">
+              1D Ruo Do Pina<br>
+              Funchal, Madeira
+            </p>
+          </li>
+          <!-- <li id="menu">
+          </li> -->
+        </ul>
     </div>
 
     <!-- scripts -->
-    <script src="js/vendor/jquery-1.10.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="scripts/vendor/jquery-1.10.1.min.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
 
     <!-- <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

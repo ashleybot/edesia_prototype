@@ -7,46 +7,89 @@
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 #title_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 85%;
-    background-color: $dark_gray;
-    text-align: center;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: $dark_gray;
+  text-align: center;
+  overflow: hidden;
 
-    #location {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        margin-top: -10%;
+  #ctrl {
+    margin-top: 2%;
+    padding: 10px;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      color: #aaa;
+      background-color: #eee;
+      padding: 10px;
+      box-shadow: inset 0 0 8px #566;
+    }
+
+    #ctrl_home + label {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    #ctrl_menu + label {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    input[type="radio"]:checked + label{
+      background-color: #566;
+      color: #eee;
+      box-shadow: none;
+    }
+  }
+
+  #cards {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      padding: 20px 0;
+      height: 100%;
+      width: 95%;
+      border: 1px solid;
+
+      &#location {
 
         #logo {
-            width: 10%;
+          width: 20%;
         }
+      }
 
-        #address {
-            color: #667;
+      &#menu {
+        #logo {
+          width: 20%;
         }
+      }
     }
+  }
 }
