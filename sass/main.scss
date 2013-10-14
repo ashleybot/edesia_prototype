@@ -92,6 +92,11 @@ img {
         border: 2px solid #ddd;
         border-radius: 4px;
         width: 70%;
+        transition: margin-left 250ms linear;
+
+        &.active {
+          margin-left: -100%;
+        }
 
         .menu_nav {
           font-family: 'Antic Didone', serif;
@@ -141,6 +146,7 @@ img {
             margin: 1%;
             text-align: left;
             padding: 1%;
+            white-space: normal;
           }
         }
       }

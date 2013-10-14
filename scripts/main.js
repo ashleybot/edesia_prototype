@@ -1,10 +1,11 @@
 $(document).ready(function(){
   $("#ctrl_menu").on("click", function(e){
-    $("#location").css({"display": "none"});
+    $("#menu").toggleClass("active");
+    //$("#location").css({"display": "none"});
   });
 
   $("#ctrl_home").on("click", function(e){
-    $("#location").css({"display": "inline-block"});
+    $("#menu").toggleClass("active");
   });
 
   //menu controls
