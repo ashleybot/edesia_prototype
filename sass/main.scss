@@ -43,10 +43,10 @@ img {
     }
 
     label {
-      color: #aaa;
-      background-color: #eee;
       padding: 10px;
-      box-shadow: inset 0 0 8px #566;
+      background-color: #566;
+      color: #eee;
+      box-shadow: none;
     }
 
     #ctrl_home + label {
@@ -60,9 +60,9 @@ img {
     }
 
     input[type="radio"]:checked + label{
-      background-color: #566;
-      color: #eee;
-      box-shadow: none;
+      color: #aaa;
+      background-color: #eee;
+      box-shadow: inset 0 0 8px #566;
     }
   }
 
@@ -71,6 +71,7 @@ img {
     padding: 0;
     width: 100%;
     white-space: nowrap;
+
     li {
       display: inline-block;
       padding: 0;
@@ -85,8 +86,62 @@ img {
       }
 
       &#menu {
-        #logo {
-          width: 20%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: white;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        width: 70%;
+
+        .menu_nav {
+          font-family: 'Antic Didone', serif;
+          float: left;
+          width: 30%;
+          margin: 0 1%;
+
+          input[type="radio"] {
+            display: none;
+
+            &:checked + label {
+              color: black;
+            }
+          }
+
+          label {
+            display: block;
+            color: #aaa;
+            border-bottom: 1px solid white;
+            height: 40px;
+            line-height: 40px;
+            font-size: 2em;
+
+            &:hover {
+              color: #aaa;
+            }
+          }
+        }
+
+        .menu_content {
+          float: left;
+          width: 67%;
+          text-align: center;
+
+          .bg_img {
+            padding: 2px;
+            background-image: url("../static/images/menu/fish.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 300px;
+            border-radius: 5px;
+          }
+
+          p {
+            background-color: #eee;
+            border-radius: 2px;
+            margin: 1%;
+            text-align: left;
+            padding: 1%;
+          }
         }
       }
     }

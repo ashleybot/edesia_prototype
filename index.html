@@ -10,6 +10,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Antic+Didone' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="stylesheets/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
 
@@ -29,14 +32,20 @@
             </p>
           </li>
           <li id="menu">
-            <img id="logo" src="static/images/eatntravel.png"></img>
-            <p id="address">
-              1D Ruo Do Pina<br>
-              Funchal, Madeira
-            </p>
+            <div class="menu_nav">
+              <h2>Menu</h2>
+              <input type="radio" name="menu_type" id="appetizers" checked></input>
+              <label for="appetizers">Appetizers</label>
+              <input type="radio" name="menu_type" id="soups"></input>
+              <label for="soups">Soups</label>
+              <input type="radio" name="menu_type" id="dishes"></input>
+              <label for="dishes">Dishes</label>
+            </div>
+            <div class="menu_content">
+              <div class="bg_img"></div>
+              <p>This is some great food right here. Eat it and revel in the beauty of fried fish and olive oil.</p>
+            </div>
           </li>
-          <!-- <li id="menu">
-          </li> -->
         </ul>
     </div>
 
