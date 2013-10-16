@@ -16,20 +16,32 @@
     <script src="scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
-    <div id="title_overlay">
-        <section id="location">
-          <img id="logo" src="static/images/eatntravel.png"></img>
-          <p id="address">
-            1D Ruo Do Pina<br>
-            Funchal, Madeira
-          </p>
-        </section>
+    <div id="map_overlay"></div>
+    <div class="lisbon_location">
+        <img id="logo" src="static/images/eatntravel.png"></img>
+        <p>
+            Ruo do Pina 1D<br>
+            Lisbon<br><br>
+            (+351) 967 424 173
+        </p>
     </div>
+    <div id="overlay"></div>
+    <div id="menu_overlay">
+        <div id="menu">
+            <h2>menu</h2>
+        </div>
+    </div>
+
+    <!-- map -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp0y-YTYzsrysRXXNoyJm_7e_REnCMmP4&sensor=true">
+    </script>
 
     <!-- scripts -->
     <script src="scripts/vendor/jquery-1.10.1.min.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/onload.js"></script>
 
     <!-- <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

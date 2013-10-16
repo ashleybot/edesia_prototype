@@ -1,9 +1,9 @@
 @import "colors";
 
 *, *:before, *:after {
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,29 +24,108 @@ img {
     vertical-align: middle;
 }
 
-#title_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 85%;
-    background-color: $dark_gray;
+#map_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.lisbon_location {
+  text-align: center;
+  width: 400px;
+  z-index: -10;
+
+  img {
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: #222;
+  z-index: 1;
+  opacity: 0;
+  overflow-y: scroll;
+}
+
+#menu_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  z-index: 2;
+  overflow-y: scroll;
+
+  #menu {
+    border: 1px solid #bbb;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 600px;
+    height: 800px;
+    left: 34.5%;
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    top: 80%;
     text-align: center;
-    overflow: hidden;
 
-    #location {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        margin-top: -10%;
-
-        #logo {
-            width: 10%;
-        }
-
-        #address {
-            color: #667;
-        }
+    h2 {
+      font-family: "Arial";
     }
+  }
+}
+
+#title_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: $dark_gray;
+  text-align: center;
+  overflow: hidden;
+  z-index: -3;
+  overflow-y: scroll;
+
+  #location {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    margin-top: -10%;
+
+    #logo {
+      width: 20%;
+    }
+
+    #locations {
+      margin: 5px 0;
+      padding: 0;
+      font-family: "Arial";
+      font-size: 1.5em;
+      list-style: none;
+
+      li {
+        &:hover {
+          cursor: pointer;
+          color: #aaa;
+        }
+      }
+    }
+  }
 }
