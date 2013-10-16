@@ -9,6 +9,9 @@
 body {
     font-size: 1em;
     line-height: 1.4;
+    background: url("../static/images/panorama/panorama.jpg");
+    background-size: 236%;
+    background-position-x: 50%;
 }
 
 hr {
@@ -33,6 +36,11 @@ img {
     background-color: $dark_gray;
     text-align: center;
     overflow: hidden;
+    transition: height 500ms;
+
+    &.hide {
+      height: 0;
+    }
 
     #location {
         position: absolute;
@@ -49,4 +57,26 @@ img {
             color: #667;
         }
     }
+}
+
+#hairline {
+  position: absolute;
+  top: 95%;
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  background-color: #ddd;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  top: 84%;
+  left: 49%;
+  transition: top 500ms;
+  img {
+    cursor: pointer;
+  }
+
+  &.hide {
+    top: 0;
+    background-color: #eee;
+  }
 }
