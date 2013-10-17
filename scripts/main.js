@@ -9,7 +9,7 @@ window.onload = function(){
 
 	$(window).on("mousemove", function(e){
 		var diff = event.clientX - mid_width;
-		var rate = (10/mid_width)*diff;
+		var rate = (1/mid_width)*diff;
 		var current_bgpx = parseFloat($("body").css("background-position-x"));
     console.log(rate);
 		console.log(current_bgpx);
