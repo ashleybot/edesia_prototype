@@ -6,9 +6,9 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Foundation 4</title>
+  <title>Eat & Travel</title>
 
-  
+  <!-- we only need this when using the zurb-foundation gem -->
   <link rel="stylesheet" href="stylesheets/app.css">
   
 
@@ -17,85 +17,134 @@
 </head>
 <body>
 
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Welcome to Foundation</h2>
-			<p>This is version 4.3.2.</p>
-			<hr />
+
+	  <div class="header">
+  	  <hr />
+  		<a href="/"><img src="static/images/eatntravel.png" alt="Eat and Travel Logo" width="200"></a>
+  		<p>Welcome to a new kind of dining experience!</p>
+      <hr />
+	  </div>
+    
+		<div class="row">
+			<div class="large-4 columns">
+        <p>Sample the regional cuisines</p>
+			</div>
+			<div class="large-4 columns">
+			  <h2>See</h2>
+			  Porthole here
+			</div>
+			<div class="large-4 columns">
+			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-8 columns">
-			<h3>The Grid</h3>
-
-			<!-- Grid Example -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-					</div>
-				</div>
+		<hr />
+				
+		<div class="row">
+			<div class="large-4 columns">
+			  why can't this be empty?
 			</div>
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
+			<div class="large-4 columns">
+  		  <div class="">
+  			  <h2>Taste</h2>
+  			  <a href="#" data-reveal-id="myModal">Click Me For A Menu</a>
+  		  </div>
 			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
+			<div class="large-4 columns">
 			</div>
+		</div>
+		
+		<div class="footer bg-blue">
+		  <hr />
 
-			<h3>Buttons</h3>
-
+		</div>
+		
+	  <!-- Reveal Modals Begin -->
+  
+    <div id="myModal" class="reveal-modal large">
+      <div data-magellan-expedition="fixed">
+        <dl class="sub-nav">
+          <dd data-magellan-arrival="appetizers"><a href="#appetizers">Appetizers</a></dd>
+          <dd data-magellan-arrival="dishes"><a href="#dishes">Dishes</a></dd>
+        </dl>
+      </div>
+      <h3>Menu</h3>
+      <h3 data-magellan-destination="appetizers">Appetizers</h3>
       <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
+        <div class="large-4 columns">
+          <img src="static/images/eatntravel.png" alt="eatntravel">
         </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+        <div class="large-8 columns">
+          <p class="lead">Your couch.  It is mine.</p>
+          <p>Im a cool paragraph that lives inside of an even cooler modal. Wins.</p>
+          <div class="section-container accordion" data-section="accordion">
+            <section class="">
+              <p class="title" data-section-title><a href="#">More info</a></p>
+              <div class="content" data-section-content>
+                <p>Here's some more information that you don't have to read if you don't want.</p>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-		</div>
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="static/images/eatntravel.png" alt="eatntravel">
+        </div>
+        <div class="large-8 columns">
+          <p class="lead">Your couch.  It is mine.</p>
+          <p>Im a cool paragraph that lives inside of an even cooler modal. Wins.</p>
+          <div class="section-container accordion" data-section="accordion">
+            <section class="">
+              <p class="title" data-section-title><a href="#">More info</a></p>
+              <div class="content" data-section-content>
+                <p>Here's some more information that you don't have to read if you don't want.</p>
+              </div>
+            </section>
+          </div>
 
-		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+        </div>
+      </div>
+      <h3 data-magellan-destination="dishes">Dishes</h3>
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="static/images/eatntravel.png" alt="eatntravel">
+        </div>
+        <div class="large-8 columns">
+          <p class="lead">Your couch.  It is mine.</p>
+          <p>Im a cool paragraph that lives inside of an even cooler modal. Wins.</p>
+          <div class="section-container accordion" data-section="accordion">
+            <section class="">
+              <p class="title" data-section-title><a href="#">More info</a></p>
+              <div class="content" data-section-content>
+                <p>Here's some more information that you don't have to read if you don't want.</p>
+              </div>
+            </section>
+          </div>
 
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-			</ul>
-		</div>
-	</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="static/images/eatntravel.png" alt="eatntravel">
+        </div>
+        <div class="large-8 columns">
+          <p class="lead">Your couch.  It is mine.</p>
+          <p>Im a cool paragraph that lives inside of an even cooler modal. Wins.</p>
+          <div class="section-container accordion" data-section="accordion">
+            <section class="">
+              <p class="title" data-section-title><a href="#">More info</a></p>
+              <div class="content" data-section-content>
+                <p>Here's some more information that you don't have to read if you don't want.</p>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+      <p>Im a cool paragraph that lives inside of an even cooler modal. Wins. Im a cool paragraph that lives inside of an even cooler modal. Wins. Im a cool paragraph that lives inside of an even cooler modal. Wins. Im a cool paragraph that lives inside of an even cooler modal. Wins.</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    
+    <!-- Reveal Modals End -->
 
   <script>
   document.write('<script src=' +
