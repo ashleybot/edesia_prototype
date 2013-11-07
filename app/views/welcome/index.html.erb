@@ -1,10 +1,12 @@
+
+<div id="ui">
 <h1>Eat & Travel</h1>
 
 <div id="porthole_container" class="row">
 	<div id="porthole_left" class="large-4 columns">
     <p>Sample the regional cuisines</p>
 	</div>
-	<div class="large-4 columns">
+	<div id="porthole" class="large-4 columns">
 	  <h2 id="see">See</h2>
 	</div>
 	<div id="porthole_right" class="large-4 columns">
@@ -32,8 +34,21 @@
 		
 <hr />
 		
+</div>
 
 
+
+
+<div id="inside">
+  <ul id="scene">
+    <li class="layer" data-depth="0.00"><%= image_tag('porthole_grey.png', :class => 'bigger_porthole') %></li>
+    <li class="layer" data-depth="0.10"><%= image_tag('porthole.png') %></li>
+  </ul>
+</div>
+
+<div id="outside">
+  <h1>Back</h1>
+</div>
 
 <!-- Reveal Modals Begin -->
 <div id="myModal" class="reveal-modal large">
@@ -44,13 +59,3 @@
   <a class="close-reveal-modal">&#215;</a>
 </div>
 <!-- Reveal Modals End -->
-
-<div id="inside">
-  <ul id="scene">
-    <li class="layer" data-depth="0.00"><%= image_tag('porthole_grey.png', :class => 'bigger_porthole') %></li>
-    <li class="layer" data-depth="0.10"><%= image_tag('porthole.png') %></li>
-  </ul>
-</div>
-
-<div id="outside">
-</div>

@@ -11,5 +11,9 @@ $(document).ready(function () {
 
     });
     
-    
+    $('#porthole').click(function() {
+      console.log('hi');
+      $('#inside').fadeOut();
+      $('#ui').fadeOut();
+    });
 });
