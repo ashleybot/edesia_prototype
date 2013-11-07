@@ -1,0 +1,20 @@
+<% @dishes.each do |dish| %>
+  <div class="row">
+    <div class="large-4 columns">
+      <img src="<%= dish.thumbnail_path %>" alt="eatntravel">
+    </div>
+    <div class="large-8 columns">
+      <p class="lead"><%= dish.name %></p>
+      <p><%= dish.summary %></p>
+      <div class="section-container accordion" data-section="accordion">
+        <section class="">
+          <p class="title" data-section-title><a href="#">More info</a></p>
+          <div class="content" data-section-content>
+            <p><%= dish.content %></p>
+            <p><%= dish.tags %></p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<% end %>
