@@ -1,0 +1,46 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+body{
+  background-color: #ccc;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+}
+
+#inside{
+min-height: 460px;
+position: absolute;
+overflow: hidden;
+display: table;
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  z-index: -999;
+}
+
+#outside{
+  background-image: image-url("bubbles.png");
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -1000;
+}
+
+#porthole_container{
+  height: 300px;
+  min-height: 300px;
+}
+
+#porthole_left{
+}
+
+#porthole_right{
+}

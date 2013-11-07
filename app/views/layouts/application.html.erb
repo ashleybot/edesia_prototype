@@ -17,14 +17,24 @@
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
+  	
     <%= csrf_meta_tags %>
-  </head>
+    
 
+  </head>
   <body>
 
     <%= yield %>
 
-    
     <%= javascript_include_tag "application" %>
+    <!-- Scripts -->
+  	<%= javascript_include_tag "vendor/parallax/parallax" %>
+  	<script>
+  
+    	// Pretty simple huh?
+    	var scene = document.getElementById('scene');
+    	var parallax = new Parallax(scene);
+  
+  	</script>
   </body>
 </html>
