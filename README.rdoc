@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
+These steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* You need Ruby 1.9.3
 
-* System dependencies
+* Then, for the easiest installation install Rails 4 using rubygems
 
-* Configuration
+* You have bundler, right? Good. Just run 'bundle install' from inside the directory you've dropped all this code.
 
-* Database creation
+* Then 'rake db:migrate' to setup the sqlite db included in this site
 
-* Database initialization
+* After that type 'rails server' in the terminal to start up a temporary web server and go to localhost:3000 in yo browser.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
