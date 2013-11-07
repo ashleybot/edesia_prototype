@@ -1,0 +1,42 @@
+
+<div class="row">
+  <h1>Listing dishes</h1>
+</div>
+<div class="row">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Summary</th>
+        <th>Content</th>
+        <th>Tags</th>
+        <th>Image paths</th>
+        <th>Thumbnail path</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @dishes.each do |dish| %>
+        <tr>
+          <td><%= dish.name %></td>
+          <td><%= dish.summary %></td>
+          <td><%= dish.content %></td>
+          <td><%= dish.tags %></td>
+          <td><%= dish.image_paths %></td>
+          <td><%= dish.thumbnail_path %></td>
+          <td><%= link_to 'Show', dish %></td>
+          <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+          <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<div class="row">
+  <%= link_to 'New Dish', new_dish_path, {:class => 'button'} %>
+</div>
