@@ -1,5 +1,6 @@
 class DishesController < ApplicationController
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_admin!
 
   # GET /dishes
   # GET /dishes.json

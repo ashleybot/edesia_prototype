@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     builder (3.1.4)
     chunky_png (1.2.9)
     coffee-rails (4.0.1)
@@ -42,6 +43,12 @@ GEM
       sass (~> 3.1)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    devise (3.2.0)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
     fssm (0.2.10)
@@ -60,6 +67,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
+    orm_adapter (0.4.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -111,6 +119,8 @@ GEM
     uglifier (2.3.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     zurb-foundation (4.0.9)
       sass (>= 3.2.0)
 
@@ -121,6 +131,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass
   compass-rails
+  devise
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.1)

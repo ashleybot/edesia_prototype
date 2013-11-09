@@ -1,4 +1,5 @@
 EdesiaPrototype::Application.routes.draw do
+  devise_for :admins
   resources :dishes
 
   get "welcome/index"
