@@ -11,7 +11,9 @@ Things you may want to cover:
 
 * You have bundler, right? Good. Just run 'bundle install' from inside the directory you've dropped all this code.
 
-* Then 'rake db:migrate' to setup the sqlite db included in this site
+* Then 'rake db:migrate' to setup the database
+** The configuration is currently for a postgres db to satisfy some requirements by Heroku (our current deplyment server)
+** However, if you go back to the previous /config/database.yml it will use the sqlite db included in this site
 
 * After that type 'rails server' in the terminal to start up a temporary web server and go to localhost:3000 in yo browser.
 

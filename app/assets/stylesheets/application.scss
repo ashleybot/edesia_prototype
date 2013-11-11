@@ -21,6 +21,15 @@ body{
   display: block;
 }
 
+header{
+  width: 100%;
+}
+.logo{
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
 #inside{
 min-height: 460px;
 position: absolute;
