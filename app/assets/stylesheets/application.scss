@@ -14,31 +14,37 @@
  
 @import "foundation_and_overrides";
 /* Add imports of custom sass/scss files here */ //= require foundation_and_overrides
+html{
+  margin: 0;
+  padding: 0;
+}
+
 body{
+  height: 100%;
   background-color: #d8eff9;
   overflow: hidden;
   margin: 0;
+  padding: 0;
   display: block;
 }
 
-header{
-  width: 100%;
+#logo{
+  background: url('images/eatntravel.png') no-repeat;
+  background-size: contain;
 }
-.logo{
-  left: 0;
-  top: 0;
-  position: relative;
+
+#logo > h1{
+  display:none;
 }
 
 #inside{
-min-height: 460px;
-position: absolute;
-overflow: hidden;
-display: table;
-height: 100%;
-width: 100%;
-left: 0;
-top: 0;
+  min-height: 460px;
+  position: absolute;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
   top: 0;
   position: absolute;
   height: 100%;
@@ -46,9 +52,9 @@ top: 0;
 }
 
 #outside{
-  background-image: image-url("bubbles.png");
-  background-repeat: repeat;
-  height: 100%;
+  background: url("bubbles.png") repeat;
+  height: 1000px;
+  min-height: 1000px;
   width: 100%;
   top: 0;
   position: absolute;
