@@ -51,6 +51,19 @@ body{
   z-index: -999;
 }
 
+#scene_table{
+  position: absolute;
+  top:400px;
+  display:block;
+  margin: auto;
+}
+
+#plate img{
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+
 #outside{
   background: url("bubbles.png") repeat;
   height: 1000px;
