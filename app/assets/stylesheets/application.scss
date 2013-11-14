@@ -26,6 +26,7 @@ body{
   margin: 0;
   padding: 0;
   display: block;
+  background: image-url("lisbon_panorama.jpg") 50% 25% no-repeat;
 }
 
 #logo{
@@ -65,7 +66,6 @@ body{
 }
 
 #outside{
-  background: url("bubbles.png") repeat;
   height: 1000px;
   min-height: 1000px;
   width: 100%;
