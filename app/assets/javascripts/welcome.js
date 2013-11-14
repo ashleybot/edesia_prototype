@@ -2,11 +2,19 @@
 // All this logic will automatically be available in application.js.
 
 $(document).ready(function () {    
-
+  var inside = true;
+  
+  $('#logo').click(function(){
+      $('#inside').fadeIn();
+      $('#ui').fadeIn();
+      //$('#logo').html('Back');
+      inside = true;
+  });
     
-    $('#porthole').click(function() {
+    $('#porthole_container').click(function() {
       $('#inside').fadeOut();
       $('#ui').fadeOut();
-      $('#logo').html('Back');
+      //$('#logo').html('Back');
+      inside = false;
     });
 });
