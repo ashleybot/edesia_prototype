@@ -2,7 +2,11 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-body{
+#outside{
 
   background: image-url("lisbon_panorama.jpg") 50% 0 no-repeat;
+}
+
+.pageheight .columns {
+  height: 1080px;
 }

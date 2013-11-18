@@ -39,15 +39,6 @@
     <%= yield %>
 
     <%= javascript_include_tag "application" %>
-    <!-- Scripts -->
-  	<%= javascript_include_tag "parallax/parallax" %>
-  	<script>
-  
-    	// Pretty simple huh?
-    	var scene = document.getElementById('scene');
-    	var parallax = new Parallax(scene);
-    	var scene_table = document.getElementById('scene_table');
-      var parallax = new Parallax(scene_table);
-  	</script>
+
   </body>
 </html>
