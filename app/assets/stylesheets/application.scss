@@ -51,19 +51,6 @@ body{
   z-index: -999;
 }
 
-#scene_table{
-  position: absolute;
-  top:400px;
-  display:block;
-  margin: auto;
-}
-
-#plate img{
-  position: absolute;
-  left: 35%;
-  top: 20%;
-}
-
 #outside{
   height: 1000px;
   min-height: 1000px;
@@ -74,19 +61,7 @@ body{
   background: image-url("lisbon_panorama.jpg") 50% 0 no-repeat;
 }
 
-
-
 #porthole_container{
   height: 300px;
   min-height: 300px;
-}
-
-#porthole{
-  
-}
-
-#porthole_left{
-}
-
-#porthole_right{
 }
