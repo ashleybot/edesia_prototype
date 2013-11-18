@@ -4,8 +4,24 @@
 */
 #outside{
 
-  background: image-url("lisbon_panorama.jpg") 50% 0 no-repeat;
 }
+
+@-webkit-keyframes wave {
+    0%{
+        background-position-y: 0%;
+    }
+    50%{
+        background-position-y: 20%;
+    }
+    100%{
+        background-position-y: 0%;
+    }
+}
+
+#outside{
+  background: image-url("lisbon_panorama.jpg") 50% 0 no-repeat;
+    -webkit-animation: wave 5s linear infinite;
+    }
 
 .pageheight .columns {
   height: 1080px;
