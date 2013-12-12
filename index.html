@@ -12,24 +12,102 @@
 
     <link rel="stylesheet" href="stylesheets/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
     <script src="scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
-    <div id="title_overlay">
-        <section id="location">
-          <img id="logo" src="static/images/eatntravel.png"></img>
-          <p id="address">
-            1D Ruo Do Pina<br>
-            Funchal, Madeira
-          </p>
-        </section>
+    <div id="interface_overlay">
+      <div id="opaque_bg"></div>
+      <div id="floating_nav">
+        <div id="logo"></div>
+        <ul id="list">
+          <li id="li_menu">Menu</li>
+          <li id="li_location">Location</li>
+          <li id="li_instagram">Instagram</li>
+        </ul>
+      </div>
+      <div id="map_view">
+        <div id="map_tour"></div>
+        <div id="bottom">
+          <div id="tab">Experience Lisbon!</div>
+          <div id="tab_content">
+            <img src="static/images/sideviews.jpg"></img>
+          </div>
+        </div>
+      </div>
+      <div id="card_menu">
+        <div class="menu_bar">
+          <div class="icon_close"></div>
+        </div>
+        <h2 id="menu_header">Menu</h2>
+        <img class="divider" src="static/images/icons/divider.png"></img>
+        <ul id="menu_sections">
+          <li>Appetizers</li>
+          <li>Starters</li>
+          <li>Main</li>
+          <li>Dessert</li>
+          <li>Drinks</li>
+        </ul>
+        <ul id="menu_dishes">
+          <li class="menu_dish">
+            <h3>Caldo Verde</h3>
+            <p>Soup made from cabbage, onions, thin sliced potatoes, and chouriço</p>
+            <span class="dish_info">
+              <img src="static/images/food_images/u-cc-caldo-verde.jpg"></img>
+              <p>Caldo verde originated from the Minho Province in northern Portugal. Today, it is a traditional national favourite that has spread across the nation and abroad. References to the soup appear in many novels by Camilo Castelo Branco. The basic traditional ingredients for caldo verde are potatoes, collard greens (although kale may be substituted), olive oil and salt. Additionally garlic or onion may be added. Some recipes add meat, such as ham hock, making it similar to Italo-American wedding soup. The soup is usually accompanied by slices of chouriço or linguiça.
+              </p>
+            </span>
+            <span class="expand_info">
+              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
+            </span>
+          </li>
+          <li>
+            <h3>Arroz do Pato</h3>
+            <p>Baked rice dish with duck, ham, chouriço, and hint of lemon</p>
+            <span class="dish_info">
+              <img src="images/food_images/u-cc-arroz.jpg"></img>
+              <p>Lorem Ipsum</p>
+            </span>
+            <span class="expand_info">
+              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div id="card_location">
+        <div class="menu_bar">
+          <div class="icon_close"></div>
+        </div>
+        <div id="location_map"></div>
+        <ul id="location_info">
+        </ul>
+      </div>
     </div>
+
+    <div id="threed"></div>
+
+    <!-- map script -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp0y-YTYzsrysRXXNoyJm_7e_REnCMmP4&sensor=true">
+    </script>
 
     <!-- scripts -->
     <script src="scripts/vendor/jquery-1.10.1.min.js"></script>
     <script src="scripts/plugins.js"></script>
+    <script src="scripts/gmaps.js"></script>
     <script src="scripts/main.js"></script>
+
+    <!-- scripts for 3d -->
+    <script src="scripts/3d/Detector.js"></script>
+    <script src="scripts/3d/three.min.js"></script>
+    <script src="scripts/3d/MTLLoader.js"></script>
+    <script src="scripts/3d/OBJMTLLoader.js"></script>
+    <script src="scripts/3d/OrbitControls_new.js"></script>
+    <script src="scripts/3d/THREEx.KeyboardState.js"></script>
+    <script src="scripts/3d/THREEx.FullScreen.js"></script>
+    <script src="scripts/3d/THREEx.WindowResize.js"></script>
+    <script src="scripts/3d/webgl.js"></script>
 
     <!-- <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

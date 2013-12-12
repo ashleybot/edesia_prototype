@@ -4,49 +4,277 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+  font-size: 0.9em;
+  line-height: 1.4;
+  background-color: green;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-#title_overlay {
+.divider {
+  width: 42px;
+}
+
+#opaque_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+
+  &.active {
+    opacity: 0.8;
+  }
+}
+
+#floating_nav {
+  position: absolute;
+  left: 3%;
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+  z-index: 5;
+
+  &:hover, &.hover {
+    opacity: 1;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+  }
+
+  #logo {
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    background: url("../static/images/eatntravel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    margin-top: 35px;
+  }
+
+  #list {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    padding: 0;
+
+    li {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      color: #333;
+
+      &:hover {
+        background-color: #aaa;
+        color: white;
+        border-left: 2px solid teal;
+        border-right: 2px solid teal;
+      }
+    }
+  }
+}
+
+#map_view {
+  z-index: 0;
+
+  #map_tour {
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 85%;
-    background-color: $dark_gray;
+    height: 100%;
     text-align: center;
     overflow: hidden;
+    transition: height 500ms;
 
-    #location {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        margin-top: -10%;
-
-        #logo {
-            width: 10%;
-        }
-
-        #address {
-            color: #667;
-        }
+    &.active {
+      visibility: visible;
     }
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    #tab {
+      background-color: white;
+      width: 200px;
+      height: 40px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+
+      &:hover {
+        height: 42px;
+        line-height: 42px;
+      }
+    }
+
+    #tab_content {
+      height: 0px;
+      background-color: white;
+      transition: height 500ms;
+      overflow: hidden;
+      text-align: center;
+
+      img {
+        height: 100px;
+      }
+
+      &.active {
+        height: 100px;
+      }
+    }
+  }
+}
+
+#card_menu, #card_location {
+  position: absolute;
+  width: 71%;
+  background-color: white;
+  left: 15%;
+  top: -100%;
+  height: 90%;
+  box-shadow: 1px 1px 1px black;
+  transition: top 500ms;
+  text-align: center;
+  overflow-x: hidden;
+
+  &.active {
+    top: 0%;
+  }
+
+  .menu_bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    .icon_close {
+      float: right;
+      background: url("../static/images/icons/icon-close.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  #menu_sections {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      display: inline;
+    }
+  }
+
+  #menu_dishes {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      padding-top: 10px;
+
+      .dish_info {
+        text-align: left;
+        display: none;
+
+        &.active {
+          display: block;
+          width: 50%;
+          padding: 10px;
+          background-color: #eee;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        img {
+          width: 40%;
+          display: inline-block;
+        }
+
+        p {
+          margin-top: 5px;
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        /*border-bottom: 1px solid #eee;*/
+
+        .expand_info {
+          background-color: #eee;
+        }
+      }
+
+      .expand_info {
+        margin: 0 auto;
+        width: 40px;
+        display: block;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.expanded {
+          background-color: #eee;
+          .icon_down {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+          }
+        }
+
+        .icon_down {
+          width: 20px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+#card_location {
+  #location_map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+#threed {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  overflow: hidden;
 }
