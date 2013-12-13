@@ -3,36 +3,21 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Tower of Belem | Eat & Travel</title>
-	  <link rel="stylesheet" href="stylesheets/reveal.css">	
     <link rel="stylesheet" href="stylesheets/example.css" />
-    <link rel="stylesheet" href="stylesheets/pushy.css" />
     <link rel="stylesheet" href="stylesheets/tower_of_belem.css" />
     <link rel="stylesheet" href="stylesheets/tower_of_belem_frames.css" />
 </head>
 <body>
-  <!-- Pushy Menu -->
-  <nav class="pushy pushy-left">
-    <img src="images/eatntravel_white.png" alt="eatntravel" width="100" style="width:100px;margin:auto;" >
-    <p>
-      Eat & Travel is a restaurant in your town!
-    </p>
-    <a href="#" class="big-link" data-reveal-id="myModal">
-  		Menu
-  	</a>	
-  </nav>
   
   <!-- Site Overlay -->
   <div class="site-overlay"></div>
     
   <div class="container">
     
-    <!-- Menu Button -->
-    <div class="menu-btn" style="top:0px;">&#9776;</div>
       
       
     <div id="top_layer" class="scroll">
       <div id="intro_title">
-        <img id="logo" src="images/eatntravel_white.png" alt="eatntravel_white" width="200">
         <h1>Tower of Belém</h1>
       </div>
       <div id="instructions">
@@ -45,12 +30,14 @@
         </ol>
       </div>
         
-      <div id="second_frame" class="blackdrop">
-        <p>
-          The Tower of Belém was built between 1515 and 1520 as a monument to the Age of Discovery. It is built at the same location from which caravels departed during the height of Portugal's power at sea. 
-          <br /><br />
-          The architecture of this tower blends Gothic and Moorish elements, including ornate patterns of twisted rope carved from stone.
-        </p>
+      <div id="second_frame" class="checkerboard">
+        <div class="blackdrop">
+          <p>
+            The Tower of Belém was built between 1515 and 1520 as a monument to the Age of Discovery. It is built at the same location from which caravels departed during the height of Portugal's power at sea. 
+            <br /><br />
+            The architecture of this tower blends Gothic and Moorish elements, including ornate patterns of twisted rope carved from stone.
+          </p>
+        </div>
       </div>
         
         
@@ -60,7 +47,11 @@
         
         
       <div id="conclusion" class="blackdrop">
-        <p>This is the end.</p>
+        <p>Visit the next landmark.
+          <a href="discoveries-monument.html">
+            <img src="images/landmark_vectors_white/discoveries_white.svg" width="250" style="position:absolute;width:250px;margin:auto;">
+          </a>
+        </p>
       </div>
     </div>
       
@@ -99,12 +90,6 @@
     </div>
   
   </div>
-    
-  <div id="myModal" class="reveal-modal">
-		<h1>Reveal Modal Goodness</h1>
-		<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
     
   <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
   <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
