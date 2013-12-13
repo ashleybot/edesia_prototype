@@ -14,11 +14,25 @@ window.onload = function(){
   //initialize restaurant location map
   var location_map = App.GMap("location_map");
   location_map.setMapCenter(51.5106333, 0.1196833);
+  location_map.addMarker(51.5440526, -0.135048, "Camden");
+
+  // change logo for floating navbar
+  $("#li_menu").hover(function(){
+    $("#logo").toggleClass("logo_menu");
+  });
+
+  $("#li_locations").hover(function(){
+    $("#logo").toggleClass("logo_locations");
+  });
+
+  $("#li_about").hover(function(){
+    $("#logo").toggleClass("logo_about");
+  });
 
   // expand map view
   $("#tab").click(function(){
     $("#tab_content").toggleClass("active");
-    $("#map_tour").toggleClass("active");
+    //$("#map_tour").toggleClass("active");
   });
 
   // expand dish information
@@ -33,7 +47,7 @@ window.onload = function(){
     $("#card_menu").toggleClass("active");
   });
 
-  $("#li_location").click(function(){
+  $("#li_locations").click(function(){
     $("#floating_nav").toggleClass("hover");
     $("#card_menu").toggleClass("active");
     $("#card_location").toggleClass("active");
