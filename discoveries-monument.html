@@ -3,35 +3,19 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Discoveries Monument | Eat & Travel</title>
-	  <link rel="stylesheet" href="stylesheets/reveal.css">	
     <link rel="stylesheet" href="stylesheets/example.css" />
-    <link rel="stylesheet" href="stylesheets/pushy.css" />
     <link rel="stylesheet" href="stylesheets/discoveries_monument.css" />
     <link rel="stylesheet" href="stylesheets/discoveries_monument_animation.css" />
 </head>
 <body>
-  <!-- Pushy Menu -->
-  <nav class="pushy pushy-left">
-    <img src="images/eatntravel_white.png" alt="eatntravel" width="100" style="width:100px;margin:auto;" >
-    <p>
-      Eat & Travel is a restaurant in your town!
-    </p>
-    <a href="#" class="big-link" data-reveal-id="myModal">
-  		Menu
-  	</a>	
-  </nav>
   
   <!-- Site Overlay -->
   <div class="site-overlay"></div>
     
   <div class="container">
     
-    <!-- Menu Button -->
-    <div class="menu-btn" style="top:0px;">&#9776;</div>
-    
     <div id="top_layer" class="scroll">
       <div id="intro_title">
-        <img id="logo" src="images/eatntravel_white.png" alt="eatntravel_white" width="200">
         <h1>Discoveries Monument</h1>
       </div>
       <div id="instructions">
@@ -44,14 +28,16 @@
         </ol>
       </div>
         
-      <div id="second_frame" class="blackdrop">
-        <p>
-          The Discoveries Monument was built in 1960 to commemorate the 500th anniversary of the death of Prince Henry the Navigator.  
-        </p>
+      <div id="second_frame" class="tile_numbers">
+        <div class="blackdrop" style="height:80%;">
+          <p>
+            The Discoveries Monument was built in 1960 to commemorate the 500th anniversary of the death of Prince Henry the Navigator.  
+          </p>
+        </div>
       </div>
       
       <div id="fourth_frame">
-        <img src="images/discoveries_monument/web_IMG_6465.jpg" alt="web_IMG_6465" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6465.jpg" alt="web_IMG_6465" height="768">
       </div>
         
         
@@ -61,25 +47,27 @@
         </ol>
       </div>  
       
-      <div id="ninth_frame" class="blackdrop">
+      <div id="ninth_frame" class="tile_starbursts">
+        <div class="blackdrop" style="height:80%">
         <p>
           Among the historical figures represented in this sculpture of a ship are King Manuel I, poet Camoes, Vasco da Gama, Magellan, Cabral, and Prince Henry the Navigator at the prow.
         </p>
+        </div>
       </div>
         
       <div id="conclusion" class="blackdrop">
-        <p>This is the end.</p>
+        <p>See the next landmark.</p>
       </div>
     </div>
     
       
     <div id="middle_layer" class="scroll">
       <div id="third_frame">
-        <img src="images/discoveries_monument/web_IMG_6484.jpg" alt="web_IMG_6484" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6484.jpg" alt="web_IMG_6484" height="768">
       </div>
       
       <div id="eighth_frame">
-        <img src="images/discoveries_monument/web_IMG_6443.jpg" alt="web_IMG_6443" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6443.jpg" alt="web_IMG_6443" height="768">
       </div>
       
 
@@ -89,42 +77,36 @@
     <div id="back_layer" class="scroll">
       
       <div id="fifth_frame">
-        <img src="images/discoveries_monument/web_IMG_6477.jpg" alt="web_IMG_6477" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6477.jpg" alt="web_IMG_6477" height="768">
       </div>      
       
-      <div id="fifth_text_frame" class="blackdrop">
+      <div id="fifth_text_frame" class="tile_swirls">
+        <div class="blackdrop" style="height: 80%;">
         <p>
             There is a mosaic on the pavement in front of the monument of a compass and world map showing the routes taken by Portuguese explorers.
         </p>
+        </div>
       </div>
       
       <div id="seventh_frame">
-        <img src="images/discoveries_monument/web_IMG_6446.jpg" alt="web_IMG_6446" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6446.jpg" alt="web_IMG_6446" height="768">
       </div>
       
       <div id="tenth_frame">
-        <img src="images/discoveries_monument/web_IMG_6433.jpg" alt="web_IMG_6433" height="768">
+        <img src="http://192.168.10.132/~admin/images/discoveries_monument/web_IMG_6433.jpg" alt="web_IMG_6433" height="768">
       </div>
       
     </div>
   
   </div>
     
-  <div id="myModal" class="reveal-modal">
-		<h1>Reveal Modal Goodness</h1>
-		<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
-    
   <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
   <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
   <script type="text/javascript" src="javascripts/vendor/jquery.jInvertScroll.js"></script>
-  <script type="text/javascript" src="javascripts/vendor/pushy.js"></script>
-	<script type="text/javascript" src="javascripts/vendor/jquery.reveal.js"></script>
   <script type="text/javascript">
     (function($) {
       
-      var frame_count = 120;
+      var frame_count = 119;
       function create_frames(id)
       {
         var frameList = $(id);

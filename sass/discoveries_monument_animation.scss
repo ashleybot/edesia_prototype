@@ -9,13 +9,12 @@
   #people_walking_frame_list
     li:nth-of-type(#{$i}) {
       @if $i < 10 {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking00#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_boat_1312x624/discoveries_boat_1312x62400#{$i}.png");
       } @else if $i < 100 {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking0#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_boat_1312x624/discoveries_boat_1312x6240#{$i}.png");
       } @else {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_boat_1312x624/discoveries_boat_1312x624#{$i}.png");
       }
-      background-size: contain;
     }
 }
 
@@ -24,12 +23,11 @@
   #river_boat_pan_frame_list
     li:nth-of-type(#{$i}) {
       @if $i < 10 {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking00#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_still_1312x624/discoveries_still_1312x62400#{$i}.png");
       } @else if $i < 100 {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking0#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_still_1312x624/discoveries_still_1312x6240#{$i}.png");
       } @else {
-        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/discoveries_still_1312x624/discoveries_still_1312x624#{$i}.png");
       }
-      background-size: contain;
     }
 }
