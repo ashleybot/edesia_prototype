@@ -37,9 +37,11 @@ img {
   height: 100%;
   background-color: black;
   display: none;
+  opacity: 0;
 
   &.active {
-    opacity: 0.8;
+    display: block;
+    opacity: 0.6;
   }
 }
 
@@ -104,8 +106,8 @@ img {
       &:hover {
         background-color: #aaa;
         color: white;
-        border-left: 2px solid teal;
-        border-right: 2px solid teal;
+        border-left: 4px solid teal;
+        border-right: 4px solid teal;
       }
     }
   }
@@ -153,7 +155,7 @@ img {
       text-align: center;
 
       &.active {
-        height: 300px;
+        height: 250px;
       }
 
       #links_landmarks {
@@ -167,6 +169,7 @@ img {
 
           img {
             height: 100px;
+            margin-bottom: 10px;
           }
 
           &:hover {
@@ -179,7 +182,7 @@ img {
   }
 }
 
-#card_menu, #card_location {
+#card_menu, #card_location, #card_about {
   position: absolute;
   width: 71%;
   background-color: white;
@@ -189,7 +192,7 @@ img {
   box-shadow: 0 8px 6px -6px black;
   transition: top 500ms;
   text-align: center;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &.active {
     top: 0%;
@@ -289,12 +292,31 @@ img {
       }
     }
   }
+
+  #menu_footer {
+    background: url("../static/images/tiles/tile_2.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+  }
 }
 
 #card_location {
   #location_map {
     width: 100%;
     height: 400px;
+  }
+
+  #location_info {
+    li {
+      list-style: none;
+      border: 1px solid #eee;
+      width: 400px;
+      margin: 20px auto;
+    }
   }
 }
 

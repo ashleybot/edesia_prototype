@@ -4,9 +4,9 @@ App.GMap = function(in_element){
 	var mapOptions = {
     zoom: 13,
     disableDefaultUI: true,
-    draggable: false,
+    draggable: true,
     disableDoubleClickZoom: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.TERRAIN
 	};
 
   var map = new google.maps.Map(document.getElementById(in_element), mapOptions);

@@ -29,10 +29,17 @@ window.onload = function(){
     $("#logo").toggleClass("logo_about");
   });
 
-  // expand map view
+  // expand experience view
   $("#tab").click(function(){
+    deactivate_all_cards();
     $("#tab_content").toggleClass("active");
     //$("#map_tour").toggleClass("active");
+  });
+
+  // change background on dish hover
+  $(".menu_dish").hover(function(){
+    var dish_img = $(this).find(".dish_image");
+    console.log(dish_img);
   });
 
   // expand dish information
@@ -41,15 +48,65 @@ window.onload = function(){
     $(this).parent().children(".dish_info").toggleClass("active");
   });
 
-  //activate menu
+  //activate menus
   $("#li_menu").click(function(){
-    $("#floating_nav").toggleClass("hover");
+    if($("#card_location").hasClass("active")) {
+      $("#card_location").toggleClass("active");
+    }
+    if($("#card_about").hasClass("active")) {
+      $("#card_about").toggleClass("active");
+    }
     $("#card_menu").toggleClass("active");
+    activate_hover_floating_nav("#card_menu");
   });
 
   $("#li_locations").click(function(){
-    $("#floating_nav").toggleClass("hover");
-    $("#card_menu").toggleClass("active");
+    if($("#card_menu").hasClass("active")) {
+      $("#card_menu").toggleClass("active");
+    }
+    if($("#card_about").hasClass("active")) {
+      $("#card_about").toggleClass("active");
+    }
     $("#card_location").toggleClass("active");
+    activate_hover_floating_nav("#card_location");
+  });
+
+  $("#li_about").click(function(){
+    if($("#card_location").hasClass("active")) {
+      $("#card_location").toggleClass("active");
+    }
+    if($("#card_menu").hasClass("active")) {
+      $("#card_menu").toggleClass("active");
+    }
+    $("#card_about").toggleClass("active");
+    activate_hover_floating_nav("#card_about");
+  });
+
+  //close cards
+  $(".icon_close").click(function(){
+    $(this).parent().parent().toggleClass("active");
   });
 };
+
+var activate_hover_floating_nav = function(menu_string){
+  if($(menu_string).hasClass("active")) {
+    $("#floating_nav").addClass("hover");
+    $("#opaque_bg").addClass("active");
+  }else {
+    $("#floating_nav").removeClass("hover");
+    $("#opaque_bg").removeClass("active");
+  }
+};
+
+var deactivate_all_cards = function(){
+  if($("#card_menu").hasClass("active")) {
+    $("#card_menu").toggleClass("active");
+  }
+  if($("#card_about").hasClass("active")) {
+    $("#card_about").toggleClass("active");
+  }
+  if($("#card_location").hasClass("active")) {
+    $("#card_location").toggleClass("active");
+  }
+  activate_hover_floating_nav("#card_menu");
+}
