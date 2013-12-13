@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
+$screen-height: 624px;
+
 html, body{
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ p {
 
 section {
   position: relative;
-  height: 1000px;
+  height: $screen-height;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -69,7 +71,7 @@ section {
 
 #instructions{
   width: 1280px;
-  top: 1150px;
+  top: 1050px;
   position: absolute;
   z-index: 1;
 }
@@ -125,18 +127,18 @@ section {
   z-index: 800;
   width: 10000px;
   top: 0px;
-  height: 768px;
+  height: $screen-height;
 }
 
 #middle_layer{
   z-index: 600;
-  height: 768px;
+  height: $screen-height;
   width: 8000px;
 }
 
 #back_layer {
   z-index: 500;
-  height: 768px;
+  height: $screen-height;
   width: 9000px;
 }
 
@@ -160,7 +162,7 @@ section {
   left: 1600px;
   top: 0px;
   width: 600px;
-  height: 768px;
+  height: $screen-height;
   display: block;
   position: absolute;
 }
@@ -229,7 +231,7 @@ section {
   left: 9700px;
   display: block;
   position: absolute;
-  height: 768px;
+  height: $screen-height;
 }
 
 
