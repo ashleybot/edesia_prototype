@@ -304,14 +304,26 @@ img {
     }
   }
 
-  #menu_footer {
-    background: url("../static/images/tiles/tile_2.png");
+  #menu_footer, #location_footer, #about_footer {
     background-repeat: repeat;
     background-size: 50%;
+    background-position: center;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 10px;
+  }
+
+  #menu_footer {
+    background: url("../static/images/tiles/tile_2.png");
+  }
+
+  #location_footer {
+    background: url("../static/images/tiles/tile_3.png");
+  }
+
+  #about_footer {
+    background: url("../static/images/tiles/tile_4.png");
   }
 }
 
