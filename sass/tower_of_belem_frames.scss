@@ -9,11 +9,11 @@
   .frame-list
     li:nth-of-type(#{$i}) {
       @if $i < 10 {
-        background: url("../images/tower_of_belem_river_frames/tower_of_belem_river00#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/belem_intro_frames_1312x624/tower_of_belem_intro00#{$i}.png");
       } @else if $i < 100 {
-        background: url("../images/tower_of_belem_river_frames/tower_of_belem_river0#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/belem_intro_frames_1312x624/tower_of_belem_intro0#{$i}.png");
       } @else {
-        background: url("../images/tower_of_belem_river_frames/tower_of_belem_river#{$i}.png");
+        background: url("http://192.168.10.132/~admin/images/belem_intro_frames_1312x624/tower_of_belem_intro#{$i}.png");
       }
       background-size: contain;
     }
