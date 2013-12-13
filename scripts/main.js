@@ -36,10 +36,14 @@ window.onload = function(){
     //$("#map_tour").toggleClass("active");
   });
 
-  // change background on dish hover
-  $(".menu_dish").hover(function(){
-    var dish_img = $(this).find(".dish_image");
-    console.log(dish_img);
+  //change background on dish hover
+  $(".menu_dish").click(function(){
+    var dish_img_src = $(this).find(".dish_image").attr("src");
+    $("#opaque_bg").css({
+      "background": "url(" + dish_img_src + ")",
+      "background-repeat": "no-repeat",
+      "background-size": "cover"
+    });
   });
 
   // expand dish information
