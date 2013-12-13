@@ -2,3 +2,6 @@
 stylesheets/
 *.bat
 /images/
+/tmp/
+/db/
+/log/
