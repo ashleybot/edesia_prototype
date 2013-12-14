@@ -38,11 +38,11 @@ img {
 }
 
 ::-webkit-scrollbar-track-piece  {
-  background-color: white;
+  background-color: #eee;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #eee url(scrollbar_thumb_bg.png) no-repeat center;
+  background: white url(scrollbar_thumb_bg.png) no-repeat center;
 }
 
 .divider {
@@ -387,9 +387,20 @@ img {
 }
 
 #threed {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: orange;
   z-index: -1;
   overflow: hidden;
+
+  #ship {
+    width: 1366px;
+  }
+
+  #video {
+    height: 100%;
+  }
 }
