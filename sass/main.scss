@@ -62,11 +62,12 @@ img {
   &.active {
     display: block;
     opacity: 0.6;
+    z-index: 3000;
   }
 }
 
 #social_media {
-  position: absolute;
+  position: fixed;
   list-style: none;
   left: 3%;
   width: 120px;
@@ -82,12 +83,12 @@ img {
 }
 
 #floating_nav {
-  position: absolute;
+  position: fixed;
   left: 3%;
   background-color: white;
   opacity: 0.5;
   color: black;
-  z-index: 3000;
+  z-index: 2000;
 
   &:hover, &.hover {
     opacity: 1;
@@ -150,7 +151,7 @@ img {
 }
 
 #map_view {
-  z-index: 2999;
+  z-index: 3000;
 
   #map_tour {
     visibility: hidden;
@@ -165,11 +166,12 @@ img {
 
     &.active {
       visibility: visible;
+      z-index: 3000;
     }
   }
 
   #bottom {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 
@@ -192,6 +194,7 @@ img {
 
       &.active {
         height: 250px;
+        z-index: 3000;
       }
 
       #links_landmarks {
@@ -230,7 +233,7 @@ img {
 }
 
 #card_menu, #card_location, #card_about {
-  position: absolute;
+  position: fixed;
   width: 71%;
   background-color: white;
   left: 15%;
@@ -240,9 +243,11 @@ img {
   transition: top 500ms;
   text-align: center;
   overflow: hidden;
+  z-index: 2500;
 
   &.active {
     top: 0%;
+    z-index: 3000;
   }
 
   .menu_bar {
@@ -393,7 +398,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: orange;
-  z-index: 1001;
+  z-index: -1;
   overflow: hidden;
 
   #ship {

@@ -469,12 +469,13 @@ E&T in London now offers a virtual dinner cruise along the Lisbon coast, with gr
         }
         
       }
-      $.jInvertScroll(['.scroll','.menu-btn'],        // an array containing the selector(s) for the elements you want to animate
+      $.jInvertScroll(['.scroll','#interface_overlay'],        // an array containing the selector(s) for the elements you want to animate
           {
           height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
           onScroll: frameHandler
       });
-      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+      
+      $('#interface_overlay').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
     }(jQuery));
   </script>
 </body>

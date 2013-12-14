@@ -6,7 +6,6 @@
 html, body{
   margin: 0;
   padding: 0;
-  color: #fff;
   background-color: #000;
 }
 
@@ -23,21 +22,7 @@ section {
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
-#logo {
-  position: absolute;
-  top: -200px;
-  left: 800px;
-  transform:rotate(25deg);
-  -ms-transform:rotate(25deg); /* IE 9 */
-  -webkit-transform:rotate(25deg); /* Safari and Chrome */
-  -webkit-filter: drop-shadow(2px 4px 3px rgba(0,0,0,0.6));
-  filter: url(#drop-shadow);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#ccc')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#ccc')";
-  text-shadow: horizontal-offset vertical-offset blur color;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
-}
 
 .menu-btn{
   // don't define top, left, width, height, position here or it will break, it must be inline style and set with javascript
