@@ -2,15 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Tower of Belem | Eat & Travel</title>
-	
+	<title>April 25th Bridge | Eat & Travel</title>
     <link rel="stylesheet" href="stylesheets/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/example.css" />
-    <link rel="stylesheet" href="stylesheets/tower_of_belem.css" />
+    <link rel="stylesheet" href="stylesheets/april_25th_bridge.css" />
 </head>
 <body>
-  
     <div id="interface_overlay">
       <div id="opaque_bg"></div>
       <div id="floating_nav">
@@ -321,69 +319,68 @@ E&T in London now offers a virtual dinner cruise along the Lisbon coast, with gr
       </div>
     </div>
   
-  
   <!-- Site Overlay -->
   <div class="site-overlay"></div>
     
   <div class="container">
-    
       
       
     <div id="top_layer" class="scroll">
       <div id="intro_title">
-        <h1>Tower of Belém</h1>
+        <h1>April 25th Bridge</h1>
       </div>
-      <div id="instructions">
-        <span id="arrow">&raquo;</span>
-      </div>
+      
         
       <div id="first_frame">
-        <ol id="tower_of_belem_frame_list" class="frame-list">
+        <ol id="bridge_still_frame_list" class="frame-list">
           <li class="active"></li>
         </ol>
       </div>
         
-      <div id="second_frame" class="checkerboard">
-        <div class="blackdrop">
-          <p>
-            The Tower of Belém was built between 1515 and 1520 as a monument to the Age of Discovery. It is built at the same location from which caravels departed during the height of Portugal's power at sea. 
-            <br /><br />
-            The architecture of this tower blends Gothic and Moorish elements, including ornate patterns of twisted rope carved from stone.
-          </p>
+      <div id="second_frame" class="tile_maze">
+        <div class="blackdrop" style="height:80%;">
+        <p>
+          This bridge was completed in 1966 and was originally named after the dictator Salazar. The name of the bridge was changed after the revolution of April 25, 1974. The bridge is often compared to the Golden Gate Bridge in San Francisco. 
+          Upon completion, the bridge had the longest central span in Europe, and the deepest foundations in the world.
+        </p>
         </div>
       </div>
         
+      
+      <div id="fourth_frame">
+        <img src="static/landmark_images/april_25th_bridge/bridge_from_right.JPG" alt="April 25th Bridge" height="768">
+      </div>
         
       <div id="sixth_frame">
-        <img src="static/landmark_images/tower_of_belem/web_MG_5658.jpg" alt="_MG_5658" height="768">
-      </div>        
+        <ol id="bridge_sailboat_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>       
+      
+      <div id="sixth_frame_text" class="tile_star">
+        <div class="blackdrop" style="height:80%;">
+        <p>
+          The large statue of Christ overlooking the Tagus was inspired by the similar statue in Rio de Janeiro. 
+          The monument was built in 1959 as a thanks to God for Portugal having been spared during World War II. 
+        </p>
+        </div>
+      </div> 
         
         
       <div id="conclusion" class="blackdrop">
-        <p>Visit the next landmark.
-          <a href="discoveries-monument.html">
-            <img src="static/landmark_images/landmark_vectors_white/discoveries_white.svg" width="250" style="position:absolute;width:250px;margin:auto;">
-          </a>
-        </p>
+        <div class="blackdrop">
+        <p>Go to the next landmark.</p>
+        </div>
       </div>
     </div>
       
     <div id="middle_layer" class="scroll">
       <div id="third_frame">
-        <img src="static/landmark_images/tower_of_belem/web_MG_5646.jpg" alt="belem_window" height="768">
-      </div>
-      
-      <div id="fourth_frame">
-        <img src="static/landmark_images/tower_of_belem/web_MG_5652.jpg" alt="belem_sketch" height="768">
+        <img src="static/landmark_images/april_25th_bridge/web_IMG_5915.JPG" alt="IMG_5915" height="768">
       </div>
 
-      
-      <div id="eighth_frame">
-        <img src="static/landmark_images/tower_of_belem/web_IMG_6504.JPG" alt="IMG_6504" height="768">
-      </div>
-      
-      <div id="ninth_frame">
-        <img src="static/landmark_images/tower_of_belem/web_MG_5717.jpg" alt="_MG_5717" height="768">
+      <div id="seventh_frame">
+        <img src="static/landmark_images/april_25th_bridge/web_IMG_6438.JPG" alt="IMG_6438" height="768">
       </div>
 
     </div>
@@ -391,13 +388,7 @@ E&T in London now offers a virtual dinner cruise along the Lisbon coast, with gr
     <div id="back_layer" class="scroll">
       
       <div id="fifth_frame">
-        <img src="static/landmark_images/tower_of_belem/web_IMG_6526.jpg" alt="belem_full" height="768">
-      </div>
-      <div id="sixth_frame_background" class="">
-      </div>
-      
-      <div id="seventh_frame">
-        <img src="static/landmark_images/tower_of_belem/web_IMG_6518.jpg" alt="belem_balcony" height="768">
+        <img src="static/landmark_images/april_25th_bridge/web_IMG_5892.JPG" alt="IMG_5892" height="768">
       </div>
       
     </div>
@@ -413,68 +404,73 @@ E&T in London now offers a virtual dinner cruise along the Lisbon coast, with gr
   <script type="text/javascript">
     (function($) {
       
-      var frame_count = 131;
-      function create_frames()
+      var frame_count = 169;
+      function create_frames(id, count)
       {
-        var frameList = $('#tower_of_belem_frame_list');
-        console.log(frameList);
+        var frameList = $(id);
         for(var i = 0; i < frame_count; i++) { // the first <li> is already on the page
             var li = $('<li/>')
                 .appendTo(frameList);
         }
       }
-      create_frames();
-      var $win = $(window),
-        $pencilFrames = $('.frame-list li'),
-        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
       
-        var animationHandler = function() {
-  
-          // quick fix to disable turn animation in Firefox
-          if ( isFirefox == false) {
-              frameHandler();
-          }
-        };
+      create_frames('#bridge_still_frame_list', 114);
+      create_frames('#bridge_sailboat_frame_list', 156);
+      
+      var $win = $(window),
+        $currentFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+        
+      var animationHandler = function() {
 
-        $(document).scroll(animationHandler);
-        $win.resize(animationHandler);
+        // quick fix to disable turn animation in Firefox
+        if ( isFirefox == false) {
+            //frameHandler();
+        }
+      };
+
+      //$(document).scroll(animationHandler); // don't need this because the jInvertScroll has it's own scroll event
+      $win.resize(animationHandler);
+      
+      function activateNextFrame(currentFrameList, totalFrames, newFrameIndex){
+          if (newFrameIndex >= 0 && newFrameIndex < totalFrames) {
+            console.log(newFrameIndex);
+              var nextFrame = newFrameIndex;
+              currentFrameList
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+      }
         
       function frameHandler(percent) {
         var w = percent * 1000;
         var startAnimation = 0;
         $('#intro_title').css('opacity', 100 - (percent * 200));
         
-        if (w > startAnimation) {
-          var speed = 1.8;
-          var v = w / speed;
-          var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
-          if (choice >= 0 && choice < frame_count) {
-              var nextFrame = choice;
-              $pencilFrames
-                  .removeClass('active')
-                  .eq(nextFrame).addClass('active');
-          }
+        if (w < 188){
+          currentFrames = $('#bridge_still_frame_list li');
+          frame_count = 114;
+        } else if (w > 600) {
+          currentFrames = $('#bridge_sailboat_frame_list li');
+          frame_count = 156;
+        }
+        
+        var speed = 1.8;
+        var v = w / speed;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
+        
+        if (w < 188){
+          activateNextFrame(currentFrames, frame_count, choice);
+        } else if ((w > 600) && (w < 825)) {
+          activateNextFrame(currentFrames, frame_count, choice);
         }
       }
       
-      function scrollHandler(percentScroll){
-        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
-        var v = w / 14.01;
-        var countOfFrames = 6;
-        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
-        console.log(choice);
-        if (choice == 0){
-          make_base();
-        } else {
-        }
-        
-      }
       $.jInvertScroll(['.scroll','#interface_overlay'],        // an array containing the selector(s) for the elements you want to animate
           {
           height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
           onScroll: frameHandler
       });
-      
       $('#interface_overlay').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
       $('#interface_overlay').css('z-index','3000');
     }(jQuery));

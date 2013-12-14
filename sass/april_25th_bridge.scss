@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+@import "landmarks";
+@import "april_25th_bridge_animation";
+
+html, body{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+p {
+  padding: 80px;
+  font-family: 'Jacques Francois', serif;
+  font-size: 2em;
+}
+
+section {
+  position: relative;
+  height: 1000px;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+.menu-btn{
+  // don't define top, left, width, height, position here or it will break, it must be inline style and set with javascript
+  z-index: 1001;
+  font-size: 4em;
+  padding-left: 10px;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#intro_title{
+  width: 1280px; // screen width
+  z-index: 1001;
+  position: absolute;
+  top: 360px;
+}
+
+#intro_title h1{
+  width: 750px;
+  margin: auto;
+  z-index: 1001;
+  color: #fff;
+  font-size: 6em;
+  font-family: 'Josefin Slab', Baskerville, Calson, Georgia, serif;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+
+#instructions{
+  width: 1280px;
+  top: 1150px;
+  position: absolute;
+  z-index: 1;
+}
+#instructions span{
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+#arrow{
+  font-family: gil sans, arial, sans;
+  font-size: 10em;
+  top: -20px;
+  position: absolute;
+  margin: 0;
+  padding:0;
+  display: block;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+}
+
+.blackdrop {
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(0, 0, 0);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+  -webkit-transition: all 0.5s linear;
+     -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+}
+
+.tile_maze {
+  background-color: #fff;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03906.JPG) repeat-y;
+  background-size: contain;
+}
+
+.tile_maze p{
+  opacity: 1;
+  
+}
+
+.tile_star {
+  background-color: #000;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03981.JPG) repeat-y;
+  background-size: contain;
+}
+
+// The heights of the layers control the scroll speed
+// So, the top layer is 15000px, then it will be 66% faster than a middle layer that is 10000px
+#top_layer{
+  z-index: 800;
+  width: 8100px;
+  top: 0px;
+  height: $screen-height;
+}
+
+#middle_layer{
+  z-index: 600;
+  height: $screen-height;
+  width: 6000px;
+}
+
+#back_layer {
+  z-index: 500;
+  height: $screen-height;
+  width: 7000px;
+}
+
+#first_frame{
+  left: 0px;
+  width: 1280px;
+  height: 100%;
+  position: absolute;
+}
+
+#second_frame{
+  left: 1280px;
+  top: 0px;
+  width: 700px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+#third_frame {
+  left: 1400px;
+  top: 0px;
+  width: 600px;
+  height: $screen-height;
+  display: block;
+  position: absolute;
+}
+
+#fourth_frame {
+  left: 2900px;
+  width: 1280px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#fifth_frame {
+  left: 3400px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#sixth_frame {
+  left: 5000px;
+  width: 1280px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#sixth_frame_text {
+  left: 6120px;
+  width: 600px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#seventh_frame {
+  left: 4650px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#conclusion{
+  width: 300px;
+  left: 7800px;
+  display: block;
+  position: absolute;
+  height: $screen-height;
+}
+
+
+
+
+
+ol {
+  list-style: none;
+}
+
+.frame-list li.active {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+

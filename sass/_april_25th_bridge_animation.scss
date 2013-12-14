@@ -1,0 +1,35 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 114 {
+  $c: $i + 1;
+  #bridge_still_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}bridge_still_frames_1312x624/April%2025th%20Bridge%20Still.mov00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("#{$image-directory-path}bridge_still_frames_1312x624/April%2025th%20Bridge%20Still.mov0#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}bridge_still_frames_1312x624/April%2025th%20Bridge%20Still.mov#{$i}.png");
+      }
+    }
+}
+
+@for $i from 0 through 156 {
+  $c: $i + 1;
+  #bridge_sailboat_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}bridge_sailboat_1312x624/bridge_sailboat_1312x62400#{$i}.png");
+      } @else if $i < 100 {
+        background: url("#{$image-directory-path}bridge_sailboat_1312x624/bridge_sailboat_1312x6240#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}bridge_sailboat_1312x624/bridge_sailboat_1312x624#{$i}.png");
+      }
+    }
+}
+
+
