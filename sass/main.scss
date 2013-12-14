@@ -27,7 +27,27 @@ img {
   vertical-align: middle;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #eee url(scrollbar_thumb_bg.png) no-repeat center;
+}
+
 .divider {
+  display: block;
+  margin: 0 auto;
   width: 42px;
 }
 
@@ -42,6 +62,22 @@ img {
   &.active {
     display: block;
     opacity: 0.6;
+  }
+}
+
+#social_media {
+  position: absolute;
+  list-style: none;
+  left: 3%;
+  width: 120px;
+  top: 35%;
+  height: 40px;
+  opacity: 0.5;
+  background-color: white;
+
+  &:hover, &.hover {
+    opacity: 1;
+    box-shadow: 0 8px 6px -6px black;
   }
 }
 
@@ -228,6 +264,7 @@ img {
   }
 
   #menu_sections {
+    display: none;
     list-style: none;
     padding: 0;
     margin-top: 10px;
@@ -237,77 +274,80 @@ img {
     }
   }
 
-  #menu_dishes {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+  #dishes {
+    float: left;
+    width: 68%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 1.5%;
+    height: 442px;
+    overflow-y: scroll;
 
-    li {
+    .menu_sections {
+      list-style: none;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #fff;
       padding-top: 10px;
 
-      .dish_info {
-        text-align: left;
-        display: none;
-
-        &.active {
-          display: block;
-          width: 50%;
-          padding: 10px;
-          background-color: #eee;
-          text-align: center;
-          margin: 0 auto;
-        }
-
-        img {
-          width: 40%;
-          display: inline-block;
-        }
-
-        p {
-          margin-top: 5px;
-          display: inline-block;
-        }
+      .section_title {
+        float: left;
+        width: 30%;
+        font-size: 1.2em;
       }
 
-      &:hover {
-        /*border-bottom: 1px solid #eee;*/
+      .section_dishes {
+        float: left;
+        width: 70%;
 
-        .expand_info {
-          background-color: #eee;
-        }
-      }
+        .dishes {
+          list-style: none;
+          padding: 0;
+          text-align: left;
 
-      .expand_info {
-        margin: 0 auto;
-        width: 40px;
-        display: block;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
+          li {
+            padding: 5px;
+            padding-left: 10px;
 
-        &:hover {
-          cursor: pointer;
-        }
+            .short_desc {
+              margin-top: 5px;
+              width: 400px;
+            }
 
-        &.expanded {
-          background-color: #eee;
-          .icon_down {
-            -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+            .dish_info {
+              display: none;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: #eee;
+            }
           }
         }
 
-        .icon_down {
-          width: 20px;
-          margin: 0 auto;
-        }
       }
     }
   }
 
+  #dish_expand {
+    float: left;
+    width: 28%;
+    margin-top: 20px;
+    height: 442px;
+
+    img {
+      width: 97%;
+      margin-top: 1%;
+    }
+
+    p {
+      margin: 5px;
+      text-align: left;
+      font-size: 0.9em;
+    }
+  }
+
   #menu_footer, #location_footer, #about_footer {
-    background-repeat: repeat;
-    background-size: 50%;
-    background-position: center;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -320,6 +360,9 @@ img {
 
   #location_footer {
     background: url("../static/images/tiles/tile_3.png");
+    background-size: 20%;
+    background-position: 20% 40%;
+    background-repeat: repeat;
   }
 
   #about_footer {

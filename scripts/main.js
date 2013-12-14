@@ -13,8 +13,8 @@ window.onload = function(){
 
   //initialize restaurant location map
   var location_map = App.GMap("location_map");
-  location_map.setMapCenter(51.5106333, 0.1196833);
-  location_map.addMarker(51.5440526, -0.135048, "Camden");
+  location_map.setMapCenter(51.512432, -0.141823);
+  location_map.addMarker(51.512432, -0.141823, "Conduit St. ");
 
   // change logo for floating navbar
   $("#li_menu").hover(function(){
@@ -85,6 +85,17 @@ window.onload = function(){
   //close cards
   $(".icon_close").click(function(){
     $(this).parent().parent().toggleClass("active");
+    $("#opaque_bg").toggleClass("active");
+    $("#floating_nav").removeClass("hover");
+  });
+
+  //menu hover
+  $(".menu_dish").hover(function(){
+    var dish_img_src = $(this).find(".dish_image").attr("src");
+    var dish_p_text = $(this).find(".long_desc").text();
+
+    $("#dish_expand").find("img").attr("src", dish_img_src);
+    $("#dish_expand").find("p").text(dish_p_text);
   });
 };
 

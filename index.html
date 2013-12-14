@@ -27,6 +27,9 @@
           <li id="li_about">About</li>
         </ul>
       </div>
+      <ul id="social_media">
+        <li><img src=""></img></li>
+      </ul>
       <div id="map_view">
         <div id="map_tour"></div>
         <div id="bottom">
@@ -61,6 +64,7 @@
           </div>
         </div>
       </div>
+
       <div id="card_menu">
         <div class="menu_bar">
           <div class="icon_close"></div>
@@ -75,166 +79,159 @@
           <li>Drinks</li>
         </ul>
         <div id="dishes">
-          <ul id="menu_dishes">
+          <ul id="menu_soup" class="menu_sections">
+            <li class="section_title">Soups</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Caldo Verde</h3>
+                  <p class="short_desc">This is the favorite traditional green soup of the Portuguese. The ingredients are cabbage, onions, thin sliced potatoes, and chouriço</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/soup/u-cc-caldo-verde.jpg"></img>
+                    <p class="long_desc">Caldo Verde rivals bacalhau as the national dish of Portugal. Although it is originally from the Minho province in northern Portugal, caldo verde is a very popular soup in Lisbon as well.
+                    </p>
+                  </span>
+                </li>
 
-          <!--SOUPS-->
-          <li class="menu_dish">
-            <h3>Caldo Verde</h3>
-            <p>This is the favorite traditional green soup of the Portuguese. The ingredients are cabbage, onions, thin sliced potatoes, and chouriço</p>
-            <span class="dish_info">
-              <img class="dish_image" src="static/images/food_images/soup/u-cc-caldo-verde.jpg"></img>
-              <p>Caldo Verde rivals bacalhau as the national dish of Portugal. Although it is originally from the Minho province in northern Portugal, caldo verde is a very popular soup in Lisbon as well. 
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Cataplana</h3>
-            <p>This delicious stew has is made with clams, chouriço, ham, onion, garlic, and tomato, and seasoned with parsley and ground chili pepper</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/soup/u-cc-cataplana.jpg"></img>
-              <p>Not to be confused with the name of the special cookware used to prepare this dish, the cataplana seafood dish is a popular, traditional meal from the Algarve coast. Cataplana recipes vary from one region to another. For example, in the Western Algarve, locals often add potatoes and/or shrimp and mussels to the dish.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <!--/SOUPS-->
-          <!--/FISH-->
-          <li>
-            <h3>Bacalhau à Brás</h3>
-            <p>This is one of the favorite styles of preparing Bacalhau - with eggs, onions, rice, and a black olive garnish</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/fish/u-cc-bacalhau-a-bras.jpg"></img>
-              <p>Bacalhau, or "codfish", is the basis of Portugal's economy, and the most popular fish in Portuguese cuisine. In fact, it is often said that the Portuguese have 365 ways to serve cod - one way for each day of the year.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Pastéis de Bacalhau</h3>
-            <p>Codfish pastries made with parsley and egg, served with rice for a heavier meal</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/fish/u-cc-pasteis-bacalhau.jpg"></img>
-              <p>These delicious codfish pastries are often served as a starter, but they are also a fantastic main course when served with rice. This is yet another popular way of preparing codfish.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Caldeirada de Bacalhau</h3>
-            <p>Another popular form of preparing Bacalhau is this hearty stew with potatoes</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/fish/u-cc-caldeirada.jpg"></img>
-              <p>Like many other Portuguese dishes, the specific fish used in caldeirada may vary from one town to the next depending on what fish is available. The original recipe for caldeirada was considered "the rich man's stew," but it has since become a popular dish for everyone.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Bacalhau Cozido</h3>
-            <p>Baked cod seasoned with garlic and olive oil served with cooked cabbage, carrot, and potato</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/fish/u-cc-bacalhau-cozido.jpg"></img>
-              <p>One of the original reasons that codfish became so popular in Portugal and other Roman Catholic countries was because of the many days, such s Fridays, Lent, and other festivals, that eating meat is forbidden by the Church.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <!--/FISH-->
-          <!--/MEAT-->
-          <li>
-            <h3>Arroz de Pato</h3>
-            <p>Duck rice made with ham, chouriço, and a hint of lemon</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/meat/u-cc-arroz.jpg"></img>
-              <p>This traditional meal originated in Braga, a region in northwestern Portugal. Although called "duck rice," this dish is usually made with a combination of different meats, and is generally accompanied by a variety of vegetables, and also seasoned with various herbs and spices.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Feijoada</h3>
-            <p>Traditional stew of beans with beef and pork</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/meat/u-cc-feijoada.png"></img>
-              <p>The word "feijão" is Portuguese for "beans" - so it is not surprising that beans feature heavily in this dish. Like many Portuguese meals, there are a variety of ways to make this traditional food. For example, in northwest Portugal, feijoada is usually made with white beans, whereas in the northeast, it is generally prepared with kidney beans and other vegetables, such s tomatoes, carrots, and cabbage.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <!--/MEAT-->
-          <!--DRINKS-->
-          <li>
-            <h3>White wine</h3>
-            <p>Crisp, refreshing white wine from the Bucelas region</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/meat/u-cc-wine.png"></img>
-              <p>Portugal has been a major wine exporter since the time of the Roman Empire. There are a great many wine varieties in the country, including meaty red wines from northern Portugal, strong-flavored dessert wines from Port, and the famous sweet wine of Madeira.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Red wine</h3>
-            <p>Meaty red wine from northern Portugal</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/meat/u-cc-red-wine.png"></img>
-              <p>Portugal has been a major wine exporter since the time of the Roman Empire. There are a great many wine varieties in the country, including meaty red wines from northern Portugal, strong-flavored dessert wines from Port, and the famous sweet wine of Madeira.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <li>
-            <h3>Caipirinha</h3>
-            <p>Cocktail made with sugar, lime, and cachaça</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/meat/u-caipirinha.png"></img>
-              <p>Although originally imported from Brazil, this cocktail has been in big hit in Portugal. There are several variations on the caipirinha in Lisbon, including the "caipirão" (with licor Beirão), the "caipiroska" (with vodka), the "caipinegra" (with blackberry vodka), and the "morangoska" (with vodka and fresh strawberries).
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <!--/DRINKS-->
-          <!--DESSERTS-->
-          <li>
-            <h3>Arroz Doce</h3>
-            <p>Traditional rice pudding flavored with lemon zest and cinnamon</p>
-            <span class="dish_info">
-              <img src="static/images/food_images/dessert/u-cc-arroz-doce.jpg"></img>
-              <p>This traditional Portuguese favorite came to from Asia and the Middle East during the Crusades. Older variations were made with molasses, and therefore had a much darker color. Now, it is usually made with white sugar. Arroz dice is particularly popular in Portugal during Christmas.
-              </p>
-            </span>
-            <span class="expand_info">
-              <img class="icon_down" src="static/images/icons/icon-down.png"></img>
-            </span>
-          </li>
-          <!--/DESSERTS-->
+                <li class="menu_dish">
+                  <h3>Cataplana</h3>
+                  <p>This delicious stew has is made with clams, chouriço, ham, onion, garlic, and tomato, and seasoned with parsley and ground chili pepper</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/soup/u-cc-cataplana.jpg"></img>
+                    <p class="long_desc">Not to be confused with the name of the special cookware used to prepare this dish, the cataplana seafood dish is a popular, traditional meal from the Algarve coast. Cataplana recipes vary from one region to another. For example, in the Western Algarve, locals often add potatoes and/or shrimp and mussels to the dish.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
           </ul>
+          <ul id="menu_fish" class="menu_sections">
+            <li class="section_title">Fish</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Bacalhau à Brás</h3>
+                  <p class="short_desc">This is one of the favorite styles of preparing Bacalhau - with eggs, onions, rice, and a black olive garnish</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-bacalhau-a-bras.jpg"></img>
+                    <p class="long_desc">Bacalhau, or "codfish", is the basis of Portugal's economy, and the most popular fish in Portuguese cuisine. In fact, it is often said that the Portuguese have 365 ways to serve cod - one way for each day of the year.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Pastéis de Bacalhau</h3>
+                  <p class="short_desc">Codfish pastries made with parsley and egg, served with rice for a heavier meal</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-pasteis-bacalhau.jpg"></img>
+                    <p class="long_desc">These delicious codfish pastries are often served as a starter, but they are also a fantastic main course when served with rice. This is yet another popular way of preparing codfish.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Caldeirada de Bacalhau</h3>
+                  <p class="short_desc">Another popular form of preparing Bacalhau is this hearty stew with potatoes</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-caldeirada.jpg"></img>
+                    <p class="long_desc">Like many other Portuguese dishes, the specific fish used in caldeirada may vary from one town to the next depending on what fish is available. The original recipe for caldeirada was considered "the rich man's stew," but it has since become a popular dish for everyone.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Bacalhau Cozido</h3>
+                  <p>Baked cod seasoned with garlic and olive oil served with cooked cabbage, carrot, and potato</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-bacalhau-cozido.jpg"></img>
+                    <p class="long_desc">One of the original reasons that codfish became so popular in Portugal and other Roman Catholic countries was because of the many days, such s Fridays, Lent, and other festivals, that eating meat is forbidden by the Church.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_meat" class="menu_sections">
+            <li class="section_title">Meat</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Arroz de Pato</h3>
+                  <p>Duck rice made with ham, chouriço, and a hint of lemon</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-arroz.jpg"></img>
+                    <p class="long_desc">This traditional meal originated in Braga, a region in northwestern Portugal. Although called "duck rice," this dish is usually made with a combination of different meats, and is generally accompanied by a variety of vegetables, and also seasoned with various herbs and spices.
+                    </p>
+                  </span>
+                </li>
+                <li>
+                  <h3>Feijoada</h3>
+                  <p>Traditional stew of beans with beef and pork</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-feijoada.png"></img>
+                    <p class="long_desc">The word "feijão" is Portuguese for "beans" - so it is not surprising that beans feature heavily in this dish. Like many Portuguese meals, there are a variety of ways to make this traditional food. For example, in northwest Portugal, feijoada is usually made with white beans, whereas in the northeast, it is generally prepared with kidney beans and other vegetables, such s tomatoes, carrots, and cabbage.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_drinks" class="menu_sections">
+            <li class="section_title">Drinks</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li>
+                  <h3>White wine</h3>
+                  <p>Crisp, refreshing white wine from the Bucelas region</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-wine.png"></img>
+                    <p class="long_desc">Portugal has been a major wine exporter since the time of the Roman Empire. There are a great many wine varieties in the country, including meaty red wines from northern Portugal, strong-flavored dessert wines from Port, and the famous sweet wine of Madeira.
+                    </p>
+                  </span>
+                </li>
+                <li>
+                  <h3>Red wine</h3>
+                  <p>Meaty red wine from northern Portugal</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-red-wine.png"></img>
+                    <p class="long_desc">Portugal has been a major wine exporter since the time of the Roman Empire. There are a great many wine varieties in the country, including meaty red wines from northern Portugal, strong-flavored dessert wines from Port, and the famous sweet wine of Madeira.
+                    </p>
+                  </span>
+                </li>
+                <li>
+                  <h3>Caipirinha</h3>
+                  <p>Cocktail made with sugar, lime, and cachaça</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-caipirinha.png"></img>
+                    <p class="long_desc">Although originally imported from Brazil, this cocktail has been in big hit in Portugal. There are several variations on the caipirinha in Lisbon, including the "caipirão" (with licor Beirão), the "caipiroska" (with vodka), the "caipinegra" (with blackberry vodka), and the "morangoska" (with vodka and fresh strawberries).
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_drinks" class="menu_sections">
+            <li class="section_title">Dessert</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li>
+                  <h3>Arroz Doce</h3>
+                  <p>Traditional rice pudding flavored with lemon zest and cinnamon</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/dessert/u-cc-arroz-doce.jpg"></img>
+                    <p class="long_desc">This traditional Portuguese favorite came to from Asia and the Middle East during the Crusades. Older variations were made with molasses, and therefore had a much darker color. Now, it is usually made with white sugar. Arroz dice is particularly popular in Portugal during Christmas.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div id="dish_expand">
+          <img src="static/images/food_images/soup/u-cc-caldo-verde.jpg"></img>
+          <p></p>
         </div>
         <div id="menu_footer"></div>
       </div>
+
       <div id="card_location">
         <div class="menu_bar">
           <div class="icon_close"></div>
@@ -244,9 +241,9 @@
           <li class="location">
             <h3>Eat & Travel London</h3>
             <p>
-              7 Camden Mews
-              London NW1
-              UK
+              13 Conduit Street
+              London W1S 2XJ
+              United Kingdom
             </p>
             <span>Enquiries</span>
             <span>Phone: (412) 336 8839</span>
