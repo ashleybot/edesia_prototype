@@ -1,0 +1,20 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 131 {
+  $c: $i + 1;
+  .frame-list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}belem_intro_frames_1312x624/tower_of_belem_intro00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("#{$image-directory-path}belem_intro_frames_1312x624/tower_of_belem_intro0#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}belem_intro_frames_1312x624/tower_of_belem_intro#{$i}.png");
+      }
+    }
+}
+

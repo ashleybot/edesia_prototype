@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Tower of Belem | Eat & Travel</title>
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/tower_of_belem.css" />
+</head>
+<body>
+  
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+    
+  <div class="container">
+    
+      
+      
+    <div id="top_layer" class="scroll">
+      <div id="intro_title">
+        <h1>Tower of Belém</h1>
+      </div>
+      <div id="instructions">
+        <span id="arrow">&raquo;</span>
+      </div>
+        
+      <div id="first_frame">
+        <ol id="tower_of_belem_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+        
+      <div id="second_frame" class="checkerboard">
+        <div class="blackdrop">
+          <p>
+            The Tower of Belém was built between 1515 and 1520 as a monument to the Age of Discovery. It is built at the same location from which caravels departed during the height of Portugal's power at sea. 
+            <br /><br />
+            The architecture of this tower blends Gothic and Moorish elements, including ornate patterns of twisted rope carved from stone.
+          </p>
+        </div>
+      </div>
+        
+        
+      <div id="sixth_frame">
+        <img src="static/landmark_images/tower_of_belem/web_MG_5658.jpg" alt="_MG_5658" height="768">
+      </div>        
+        
+        
+      <div id="conclusion" class="blackdrop">
+        <p>Visit the next landmark.
+          <a href="discoveries-monument.html">
+            <img src="static/landmark_images/landmark_vectors_white/discoveries_white.svg" width="250" style="position:absolute;width:250px;margin:auto;">
+          </a>
+        </p>
+      </div>
+    </div>
+      
+    <div id="middle_layer" class="scroll">
+      <div id="third_frame">
+        <img src="static/landmark_images/tower_of_belem/web_MG_5646.jpg" alt="belem_window" height="768">
+      </div>
+      
+      <div id="fourth_frame">
+        <img src="static/landmark_images/tower_of_belem/web_MG_5652.jpg" alt="belem_sketch" height="768">
+      </div>
+
+      
+      <div id="eighth_frame">
+        <img src="static/landmark_images/tower_of_belem/web_IMG_6504.JPG" alt="IMG_6504" height="768">
+      </div>
+      
+      <div id="ninth_frame">
+        <img src="static/landmark_images/tower_of_belem/web_MG_5717.jpg" alt="_MG_5717" height="768">
+      </div>
+
+    </div>
+      
+    <div id="back_layer" class="scroll">
+      
+      <div id="fifth_frame">
+        <img src="static/landmark_images/tower_of_belem/web_IMG_6526.jpg" alt="belem_full" height="768">
+      </div>
+      <div id="sixth_frame_background" class="">
+      </div>
+      
+      <div id="seventh_frame">
+        <img src="static/landmark_images/tower_of_belem/web_IMG_6518.jpg" alt="belem_balcony" height="768">
+      </div>
+      
+    </div>
+  
+  </div>
+    
+  <script type="text/javascript" src="scripts/vendor/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="scripts/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="scripts/vendor/jquery.jInvertScroll.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      
+      var frame_count = 131;
+      function create_frames()
+      {
+        var frameList = $('#tower_of_belem_frame_list');
+        console.log(frameList);
+        for(var i = 0; i < frame_count; i++) { // the first <li> is already on the page
+            var li = $('<li/>')
+                .appendTo(frameList);
+        }
+      }
+      create_frames();
+      var $win = $(window),
+        $pencilFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+      
+        var animationHandler = function() {
+  
+          // quick fix to disable turn animation in Firefox
+          if ( isFirefox == false) {
+              frameHandler();
+          }
+        };
+
+        $(document).scroll(animationHandler);
+        $win.resize(animationHandler);
+        
+      function frameHandler(percent) {
+        var w = percent * 1000;
+        var startAnimation = 0;
+        $('#intro_title').css('opacity', 100 - (percent * 200));
+        
+        if (w > startAnimation) {
+          var speed = 1.8;
+          var v = w / speed;
+          var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
+          if (choice >= 0 && choice < frame_count) {
+              var nextFrame = choice;
+              $pencilFrames
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+        }
+      }
+      
+      function scrollHandler(percentScroll){
+        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
+        var v = w / 14.01;
+        var countOfFrames = 6;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+        console.log(choice);
+        if (choice == 0){
+          make_base();
+        } else {
+        }
+        
+      }
+      $.jInvertScroll(['.scroll','.menu-btn'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: frameHandler
+      });
+      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+    }(jQuery));
+  </script>
+</body>
+</html>
+

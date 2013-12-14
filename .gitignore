@@ -5,3 +5,5 @@ stylesheets/
 /tmp/
 /db/
 /log/
+static/landmark_images/
+.DS_Store
