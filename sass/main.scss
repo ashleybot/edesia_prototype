@@ -87,7 +87,7 @@ img {
   background-color: white;
   opacity: 0.5;
   color: black;
-  z-index: 5;
+  z-index: 3000;
 
   &:hover, &.hover {
     opacity: 1;
@@ -150,7 +150,7 @@ img {
 }
 
 #map_view {
-  z-index: 0;
+  z-index: 2999;
 
   #map_tour {
     visibility: hidden;
@@ -393,7 +393,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: orange;
-  z-index: -1;
+  z-index: 1001;
   overflow: hidden;
 
   #ship {
