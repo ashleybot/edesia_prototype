@@ -1,0 +1,33 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 120 {
+  $c: $i + 1;
+  #people_walking_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}discoveries_boat_1312x624/discoveries_boat_1312x62400#{$i}.png");
+      } @else if $i < 100 {
+        background: url("#{$image-directory-path}discoveries_boat_1312x624/discoveries_boat_1312x6240#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}discoveries_boat_1312x624/discoveries_boat_1312x624#{$i}.png");
+      }
+    }
+}
+
+@for $i from 0 through 120 {
+  $c: $i + 1;
+  #river_boat_pan_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}discoveries_still_1312x624/discoveries_still_1312x62400#{$i}.png");
+      } @else if $i < 100 {
+        background: url("#{$image-directory-path}discoveries_still_1312x624/discoveries_still_1312x6240#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}discoveries_still_1312x624/discoveries_still_1312x624#{$i}.png");
+      }
+    }
+}
