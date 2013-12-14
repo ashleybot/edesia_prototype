@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Praça Comercio | Eat & Travel</title>
+    <link rel="stylesheet" href="stylesheets/normalize.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/commerce_square.css" />
+</head>
+<body>
+    <div id="interface_overlay">
+      <div id="opaque_bg"></div>
+      <div id="floating_nav">
+        <div id="logo"></div>
+        <ul id="list">
+          <li id="li_menu">Menu</li>
+          <li id="li_locations">Locations</li>
+          <li id="li_about">About</li>
+        </ul>
+      </div>
+      <ul id="social_media">
+        <li><img src=""></img></li>
+      </ul>
+      <div id="map_view">
+        <div id="map_tour"></div>
+        <div id="bottom">
+          <div id="tab">Experience Lisbon!</div>
+          <div id="tab_content">
+            <ul id="links_landmarks">
+              <li class="link_landmark">
+                <img id="start_point" src="static/images/silhouettes/endpoint.png"></img>
+                <h3>Start</h3>
+              </li>
+              <li class="link_landmark">
+                <img src="static/images/silhouettes/towerofbelem.png"></img>
+                <h3>Tower of Belem</h3>
+              </li>
+              <li class="link_landmark">
+                <img src="static/images/silhouettes/discoveries.png"></img>
+                <h3>The Discoveries</h3>
+              </li>
+              <li class="link_landmark">
+                <img src="static/images/silhouettes/bridge.png"></img>
+                <h3>Bridge</h3>
+              </li>
+              <li class="link_landmark">
+                <img src="static/images/silhouettes/praca.png"></img>
+                <h3>Praca</h3>
+              </li>
+              <li class="link_landmark">
+                <img id="end_point" src="static/images/silhouettes/endpoint.png"></img>
+                <h3>End</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="card_menu">
+        <div class="menu_bar">
+          <div class="icon_close"></div>
+        </div>
+        <h2 id="menu_header">Menu</h2>
+        <img class="divider" src="static/images/icons/divider.png"></img>
+        <ul id="menu_sections">
+          <li>Starters</li>
+          <li>Fish</li>
+          <li>Meat</li>
+          <li>Wine</li>
+          <li>Dessert</li>
+        </ul>
+        <div id="dishes">
+          <ul id="menu_soup" class="menu_sections">
+            <li class="section_title">Starters</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Caldo Verde</h3>
+                  <p class="short_desc">soup with collard greens, cabbage, onions, potatoes, and chouriço
+                  </p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/starters/u-cc-caldo-verde.jpg"></img>
+                    <p class="long_desc">Caldo Verde rivals bacalhau as the national dish of Portugal. Although it is originally from the Minho province in northern Portugal, caldo verde is also a very popular soup in Lisbon.
+                    </p>
+                  </span>
+                </li>
+
+                <li class="menu_dish">
+                  <h3>Cataplana</h3>
+                  <p>stew of clams, chouriço, ham, onion, garlic, and tomato, with parsley and chili pepper
+                  </p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/starters/u-cc-cataplana.jpg"></img>
+                    <p class="long_desc">The cataplana seafood dish is a popular, traditional meal from the Algarve coast. Cataplana recipes vary from one region to another. For example, in the Western Algarve, locals often add potatoes and/or shrimp and mussels. This dish is not to be confused with the name of the special cookware used to prepare it!
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Caipirinha</h3>
+                  <p>cocktail made with sugar, lime, and cachaça
+                  </p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/starters/u-cc-caipirinha.png"></img>
+                    <p class="long_desc">Although originally imported from Brazil, this cocktail has become a big hit in Portugal. There are several variations on the caipirinha in Lisbon, including the "caipirão" (with licor Beirão), the "caipiroska" (with vodka), the "caipinegra" (with blackberry vodka), and the "morangoska" (with vodka and fresh strawberries).
+                    </p>
+                  </span>
+                </li>
+                </ul>
+            </li>
+          </ul>
+          <ul id="menu_fish" class="menu_sections">
+            <li class="section_title">Fish</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Bacalhau à Brás</h3>
+                  <p class="short_desc">
+					shredded salted cod, rice, scrambled eggs, and onions, with a black olive garnish
+                  </p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-bacalhau-a-bras.jpg"></img>
+                    <p class="long_desc">Bacalhau, or "codfish", is the basis of Portugal's economy, and the most popular fish in Portuguese cuisine. In fact, it is often said that the Portuguese have 1001 ways to serve cod - much more than enough for each day of the year.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Pastéis de Bacalhau</h3>
+                  <p class="short_desc">pastries of cod, potato, egg with parsley, served with rice</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-pasteis-bacalhau.jpg"></img>
+                    <p class="long_desc">
+These delicious codfish pastries are often served as a starter, but they are also a fantastic main course when served with rice. One of the reasonscodfish became so popular in Portugal and other Roman Catholic countries was because of the many days when eating meat is forbidden by the Church.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Caldeirada de Bacalhau</h3>
+                  <p class="short_desc">stew of cod and potatoes</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-caldeirada.jpg"></img>
+                    <p class="long_desc">
+Like many other Portuguese dishes, the specific fish used in caldeirada may vary from one town to the next depending on what fish is available. The original recipe for caldeirada was considered "the rich man's stew," but it has since become a popular dish for everyone.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Chocos com Tinta</h3>
+                  <p>grilled chocos with potatoes and salad</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/fish/u-cc-chocos.png"></img>
+                    <p class="long_desc">
+Grilled cuttlefish is a delicious alternative to bacalhau. Although not always served this way, here the cephalopod is grilled over charcoal and served in a sauce made from its own ink. Beware, because the inky sauce can dye your teeth!
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_meat" class="menu_sections">
+            <li class="section_title">Meat</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Bitoque</h3>
+                  <p>steak with egg on top, served with french fries, rice and salad</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-bitoque-bife.png"></img>
+                    <p class="long_desc">
+No Lisboan menu would be complete without this egg-topped steak. This popular dish might be one of the most commonly served dishes in Portugal, and makes a great meal any time of day.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Arroz de Pato</h3>
+                  <p>rice with duck, ham, and chouriço, with parsley and a mint garnish</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-arroz.jpg"></img>
+                    <p class="long_desc">
+This traditional meal originated in Braga, a region in northwestern Portugal. Although called "duck rice," this dish is usually made with a combination of different meats, and is generally accompanied by a variety of vegetables, and is seasoned with various herbs and spices.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Feijoada</h3>
+                  <p>stew of beef, pork, and beans</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-feijoada.png"></img>
+                    <p class="long_desc">
+The word "feijão" is Portuguese for "beans" - so it is not surprising that beans feature heavily in this dish. Like many Portuguese meals, there are a variety of ways to make this traditional food. For example, in northwest Portugal, feijoada is usually made with white beans, whereas in the northeast, it is generally prepared with kidney beans and other vegetables, such as tomatoes, carrots, and cabbage.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Cozido à Portuguesa</h3>
+                  <p>stew of beef, chicken, pork, chouriço, collard greens, potatoes and carrots</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/meat/u-cc-cozida-portuguesa.png"></img>
+                    <p class="long_desc">
+This dish, which is also very popular in Spain, originated in the Beira region. It consists mainly of pork and beef shins, and may be accompanied by rice, potatoes, and a variety of vegetables. However, the dish ingredients vary from one region to another.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_drinks" class="menu_sections">
+            <li class="section_title">Wine</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Vinho Alvarinho</h3>
+                  <p>Crisp, refreshing green wine from Monção</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/wine/u-cc-green-wine.png"></img>
+                    <p class="long_desc">Green wine is made from grapes that do not contain large amounts of sugar, and therefore do not require the aging process. This is one of the most popular green wines in Portugal.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Vinho Monte Velho</h3>
+                  <p>Red wine from Alentejo</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/wine/u-cc-red-wine.png"></img>
+                    <p class="long_desc">Portugal has been a major wine exporter since the time of the Roman Empire. There are a great many wine varieties in the country.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Sangria</h3>
+                  <p>Wine with sugar, apple, orange, lemon and orange soda</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/wine/u-cc-sangria.png"></img>
+                    <p class="long_desc">
+Sangria is an excellent alternative to more alcoholic options. Although it is a very popular in locations around the world, each place gives the concoction a unique twist. Making sangria with apple, orange, and lemon is a more typical method of preparing this refreshing drink here in Lisbon.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="menu_drinks" class="menu_sections">
+            <li class="section_title">Dessert</li>
+            <li class="section_dishes">
+              <ul class="dishes">
+                <li class="menu_dish">
+                  <h3>Arroz Doce</h3>
+                  <p>rice pudding flavored with lemon zest and cinnamon</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/dessert/u-cc-arroz-doce.jpg"></img>
+                    <p class="long_desc">
+This traditional Portuguese favorite came from Asia and the Middle East during the Crusades. Older variations were made with molasses, and therefore had a much darker color. Now, it is usually made with white sugar. Arroz doce is particularly popular in Portugal during Christmas.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Leite-creme</h3>
+                  <p>egg custard topped with hard caramel</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/dessert/u-sc-leite-creme.png"></img>
+                    <p class="long_desc">
+Leite-creme is the Portuguese version of the French crème brûlée. It is one of the most popular desserts in Portugual, along with other rich egg-based desserts, such as pudim flã, arroz doce, and the famous pastel de nata.
+                    </p>
+                  </span>
+                </li>
+                <li class="menu_dish">
+                  <h3>Pastel de Nata</h3>
+                  <p>egg and cream pastry with cinnamon</p>
+                  <span class="dish_info">
+                    <img class="dish_image" src="static/images/food_images/dessert/u-cc-pastel-nata.png"></img>
+                    <p class="long_desc">
+Pastéis de nata were probably first invented before the 18th century by Catholic monks at the Jerónimos Monastery. These pastries were mass produced during medieval times by convents and monasteries with large amounts of leftover egg yolks. The famous Casa Pastéis de Belém began to take over the manufacture of the pastries as more and more convents and monasteries closed in the 1800s.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div id="dish_expand">
+          <img src="static/images/food_images/soup/u-cc-caldo-verde.jpg"></img>
+          <p></p>
+        </div>
+        <div id="menu_footer"></div>
+      </div>
+
+      <div id="card_location">
+        <div class="menu_bar">
+          <div class="icon_close"></div>
+        </div>
+        <div id="location_map"></div>
+        <ul id="location_info">
+          <li class="location">
+            <h3>Eat & Travel London</h3>
+            <p>
+              13 Conduit Street
+              London W1S 2XJ
+              United Kingdom
+            </p>
+            <span>Enquiries</span>
+            <span>Phone: (412) 336 8839</span>
+            <span>Email: service@eatandtravel.pt</span>
+          </li>
+        </ul>
+        <div id="location_footer"></div>
+      </div>
+      <div id="card_about">
+        <div class="menu_bar">
+          <div class="icon_close"></div>
+        </div>
+		<p>
+		Eat & Travel is a technology startup that gives diners the immersive experience of traveling someplace new. Each month, E&T offers a characteristic meal from a different location, while showing riverboat views to give patrons the sense that they are really visiting the destination by boat. 
+</p>
+<p>
+E&T in London now offers a virtual dinner cruise along the Lisbon coast, with great food and beautiful views.
+		</p>
+        <div id="about_footer"></div>
+      </div>
+    </div>
+  
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+    
+  <div class="container">
+      
+      
+    <div id="top_layer" class="scroll">
+      <div id="intro_title">
+        <h1>Praça Comercio</h1>
+      </div>
+      
+        
+      <div id="first_frame">
+        <ol id="bridge_still_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+        
+      <div id="second_frame" class="tile_maze">
+        <div class="blackdrop" style="height:80%;">
+        <p>
+          This monumental space on the shore of the Tagus was originally known as the Palace Grounds (Terreiro do Paço). However, the royal palace was completely destroyed in the earthquake of 1755. 
+        </p>
+        </div>
+      </div>
+        
+      
+      <div id="fourth_frame">
+        <img src="static/landmark_images/praca_comercio/web_IMG_5765.JPG" alt="April 25th Bridge" height="768">
+      </div>
+        
+      <div id="sixth_frame">
+        <img src="static/landmark_images/praca_comercio/web_IMG_6079.JPG" alt="IMG_5892" height="768">      </div>       
+      
+      <div id="sixth_frame_text" class="tile_star">
+        <div class="blackdrop" style="height:80%;">
+        <p>
+          The statue in the center of the square is of King Jose I. For many years, this square was used as a parking lot, although the area is now open for visitors to walk around and explore. 
+        </p>
+        </div>
+      </div> 
+        
+        
+      <div id="conclusion" class="blackdrop">
+        <div class="blackdrop">
+        <p>Go to the next landmark.</p>
+        </div>
+      </div>
+    </div>
+      
+    <div id="middle_layer" class="scroll">
+      <div id="third_frame">
+        <img src="static/landmark_images/praca_comercio/web_IMG_5769.JPG" alt="IMG_5915" height="768">
+      </div>
+
+      <div id="seventh_frame">
+        <img src="static/landmark_images/praca_comercio/web_IMG_6159.JPG" alt="IMG_6159" height="768">
+      </div>
+
+    </div>
+      
+    <div id="back_layer" class="scroll">
+      
+      <div id="fifth_frame">
+        <ol id="bridge_sailboat_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+      
+    </div>
+  
+  </div>
+    
+  <script type="text/javascript" src="scripts/vendor/jquery-1.10.1.min.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/gmaps.js"></script>
+    <script src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="scripts/vendor/jquery.jInvertScroll.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      
+      var frame_count = 169;
+      function create_frames(id, count)
+      {
+        var frameList = $(id);
+        for(var i = 0; i < frame_count; i++) { // the first <li> is already on the page
+            var li = $('<li/>')
+                .appendTo(frameList);
+        }
+      }
+      
+      create_frames('#bridge_still_frame_list', 114);
+      create_frames('#bridge_sailboat_frame_list', 156);
+      
+      var $win = $(window),
+        $currentFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+        
+      var animationHandler = function() {
+
+        // quick fix to disable turn animation in Firefox
+        if ( isFirefox == false) {
+            //frameHandler();
+        }
+      };
+
+      //$(document).scroll(animationHandler); // don't need this because the jInvertScroll has it's own scroll event
+      $win.resize(animationHandler);
+      
+      function activateNextFrame(currentFrameList, totalFrames, newFrameIndex){
+          if (newFrameIndex >= 0 && newFrameIndex < totalFrames) {
+            console.log(newFrameIndex);
+              var nextFrame = newFrameIndex;
+              currentFrameList
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+      }
+        
+      function frameHandler(percent) {
+        var w = percent * 1000;
+        var startAnimation = 0;
+        $('#intro_title').css('opacity', 100 - (percent * 200));
+        
+        if (w < 160){
+          currentFrames = $('#bridge_still_frame_list li');
+          frame_count = 86;
+        } else if (w > 500) {
+          currentFrames = $('#bridge_sailboat_frame_list li');
+          frame_count = 81;
+        }
+        
+        var speed = 2;
+        var v = w / speed;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
+        
+        if (w < 160){
+          activateNextFrame(currentFrames, frame_count, choice);
+        } else if ((w > 500) && (w < 725)) {
+          activateNextFrame(currentFrames, frame_count, choice);
+        }
+      }
+      
+      $.jInvertScroll(['.scroll','#interface_overlay'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: frameHandler
+      });
+      $('#interface_overlay').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+      $('#interface_overlay').css('z-index','3000');
+    }(jQuery));
+  </script>
+</body>
+</html>
+

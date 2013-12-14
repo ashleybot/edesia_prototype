@@ -1,0 +1,31 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 86 {
+  $c: $i + 1;
+  #bridge_still_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}praca_closeup_1312x624/praca_closeup_1312x6240#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}praca_closeup_1312x624/praca_closeup_1312x624#{$i}.png");
+      } 
+    }
+}
+
+@for $i from 0 through 81 {
+  $c: $i + 1;
+  #bridge_sailboat_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("#{$image-directory-path}praca_far_1312x624/praca_far_1312x6240#{$i}.png");
+      } @else {
+        background: url("#{$image-directory-path}praca_far_1312x624/praca_far_1312x624#{$i}.png");
+      } 
+    }
+}
+
+
