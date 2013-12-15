@@ -114,7 +114,7 @@ window.onload = function(){
   });
 
   //video
-  $("#video").append($('<source src="static/video/v1.mp4" autoplay controls>'));
+  //$("#video").append($('<source src="static/video/v1.webm" autoplay controls>'));
 };
 
 var activate_hover_floating_nav = function(menu_string){
