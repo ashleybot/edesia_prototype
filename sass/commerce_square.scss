@@ -5,14 +5,7 @@
 html, body{
   margin: 0;
   padding: 0;
-  color: #fff;
   background-color: #000;
-}
-
-p {
-  padding: 80px;
-  font-family: 'Jacques Francois', serif;
-  font-size: 2em;
 }
 
 section {
@@ -74,39 +67,7 @@ section {
   -webkit-transform:rotate(90deg); /* Safari and Chrome */
 }
 
-.blackdrop {
-  /* Fallback for web browsers that don't support RGBa */
-  background-color: rgb(0, 0, 0);
-  /* RGBa with 0.6 opacity */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* For IE 5.5 - 7*/
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 
-  -webkit-transition: all 0.5s linear;
-     -moz-transition: all 0.5s linear;
-      -ms-transition: all 0.5s linear;
-       -o-transition: all 0.5s linear;
-          transition: all 0.5s linear;
-}
-
-.tile_maze {
-  background-color: #fff;
-  background: url(#{$image-directory-path}/photos_of_tiles/DSC03906.JPG) repeat-y;
-  background-size: contain;
-}
-
-.tile_maze p{
-  opacity: 1;
-  
-}
-
-.tile_star {
-  background-color: #000;
-  background: url(#{$image-directory-path}/photos_of_tiles/DSC03981.JPG) repeat-y;
-  background-size: contain;
-}
 
 // The heights of the layers control the scroll speed
 // So, the top layer is 15000px, then it will be 66% faster than a middle layer that is 10000px
