@@ -3,7 +3,7 @@ App.prev_ship_imgnum = 2;
 window.onload = function(){
   console.log("loaded");
   //initialize google map
-  var gmap = App.GMap("map_tour");
+  /*var gmap = App.GMap("map_tour");
   gmap.addMarker(38.691584, -9.215977, "Belem Tower", "Belem Tower");
   gmap.addMarker(38.693597, -9.205712, "Discoveries Monument", "Discoveries Monument");
   gmap.addMarker(38.6980952, -9.1790209, "Ponte 25 Abril", "Ponte 25 Abril");
@@ -16,7 +16,7 @@ window.onload = function(){
   //initialize restaurant location map
   var location_map = App.GMap("location_map");
   location_map.setMapCenter(51.512432, -0.141823);
-  location_map.addMarker(51.512432, -0.141823, "Conduit St. ");
+  location_map.addMarker(51.512432, -0.141823, "Conduit St. ");*/
 
   // change logo for floating navbar
   $("#li_menu").hover(function(){
