@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
 $screen-height: 624px;
 $image-directory-path: "../static/landmark_images/"; //include trailing slash
@@ -6,14 +8,7 @@ p.landmark_text {
   padding: 80px;
   font-family: 'Jacques Francois', serif;
   font-size: 2em;
-}
-
-next_landmark a{
-  text-decoration: none;
-  color: black;
-}
-next_landmark a:hover {
-  color: black;
+   height:100%;
 }
 
 /* now a whitedrop */
