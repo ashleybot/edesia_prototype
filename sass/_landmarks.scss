@@ -8,6 +8,14 @@ p.landmark_text {
   font-size: 2em;
 }
 
+next_landmark a{
+  text-decoration: none;
+  color: black;
+}
+next_landmark a:hover {
+  color: black;
+}
+
 /* now a whitedrop */
 .blackdrop {
   /* Fallback for web browsers that don't support RGBa */
