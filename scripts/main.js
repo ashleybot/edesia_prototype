@@ -31,13 +31,6 @@ window.onload = function(){
     $("#logo").toggleClass("logo_about");
   });
 
-  // expand experience view
-  $("#tab").click(function(){
-    deactivate_all_cards();
-    $("#tab_content").toggleClass("active");
-    //$("#map_tour").toggleClass("active");
-  });
-
   // change background on dish hover
   $(".menu_dish").hover(function(){
     var dish_img = $(this).find(".dish_image");
@@ -88,8 +81,8 @@ window.onload = function(){
   $(".icon_close").click(function(){
     $(this).parent().parent().toggleClass("active");
     $("#opaque_bg").toggleClass("active");
-    $("#floating_nav").removeClass("hover");
-    $("#social_media").removeClass("hover");
+    // $("#floating_nav").removeClass("hover");
+    // $("#social_media").removeClass("hover");
   });
 
   //menu hover
@@ -138,12 +131,12 @@ window.onload = function(){
 
 var activate_hover_floating_nav = function(menu_string){
   if($(menu_string).hasClass("active")) {
-    $("#floating_nav").addClass("hover");
-    $("#social_media").addClass("hover");
+    //$("#floating_nav").addClass("hover");
+    //$("#social_media").addClass("hover");
     $("#opaque_bg").addClass("active");
   }else {
-    $("#floating_nav").removeClass("hover");
-    $("#social_media").removeClass("hover");
+    //$("#floating_nav").removeClass("hover");
+    //$("#social_media").removeClass("hover");
     $("#opaque_bg").removeClass("active");
   }
 };
@@ -158,5 +151,5 @@ var deactivate_all_cards = function(){
   if($("#card_location").hasClass("active")) {
     $("#card_location").toggleClass("active");
   }
-  activate_hover_floating_nav("#card_menu");
+  //activate_hover_floating_nav("#card_menu");
 }

@@ -78,6 +78,8 @@ img {
   background-color: white;
   z-index: 2000;
   padding: 0;
+  opacity: 1;
+  box-shadow: 0 8px 6px -6px black;
 
   li {
     float: left;
@@ -92,28 +94,17 @@ img {
       }
     }
   }
-
-  &:hover, &.hover {
-    opacity: 1;
-    box-shadow: 0 8px 6px -6px black;
-  }
 }
 
 #floating_nav {
   position: fixed;
   left: 3%;
   background-color: white;
-  opacity: 0.5;
+  opacity: 1;
   color: black;
   z-index: 2000;
   top: 0;
-
-  &:hover, &.hover {
-    opacity: 1;
-    background-color: white;
-    color: black;
-    box-shadow: 0 8px 6px -6px black;
-  }
+  box-shadow: 0 8px 6px -6px black;
 
   #logo {
     left: 5%;
