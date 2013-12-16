@@ -28,7 +28,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 10px;
 }
 
@@ -42,7 +42,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #eee;
+  background: #eee url("../static/images/icons/scrollbar_thumb_bg.png") no-repeat center;
 }
 
 .divider {
@@ -168,6 +168,7 @@ img {
 
 #map_view {
   z-index: 3000;
+  display: none;
 
   #map_tour {
     visibility: hidden;
@@ -187,44 +188,73 @@ img {
   }
 
   #bottom {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 300px;
     width: 100%;
     z-index: 3000;
 
     #tab {
-      background-color: white;
-      width: 200px;
-      height: 40px;
-      margin: 0 auto;
+      position: relative;
+      left: 3%;
+      background: url("../static/images/tiles/tile_1_white.png");
+      background-size: 100%;
+      background-repeat: repeat;
+      width: 120px;
+      height: 120px;
+      margin: 0;
       text-align: center;
-      line-height: 40px;
       cursor: pointer;
+      font-size: 1.1em;
+      padding-top: 40px;
+      z-index: 3000;
     }
 
     #tab_content {
-      height: 0px;
+      position: absolute;
+      top: 0px;
+      left: 3%;
+      height: 120px;
       background-color: white;
       transition: height 500ms;
       overflow: hidden;
       text-align: center;
+      line-height: 120px;
+      width: 120px;
+      transition: width 200ms;
+      /*transition: left 400ms;*/
+      z-index: 2999;
+
+      &:hover {
+        left: 160px;
+        width: 479px;
+      }
 
       &.active {
-        height: 250px;
-        z-index: 3000;
+        left: 160px;
+        width: 479px;
+      }
+
+      #tab_header {
+        top: 0;
+        width: 100%;
+        height: 10px;
+        background: url("../static/images/tiles/tile_1_white.png");
+        background-size: 10%;
+        display: none;
       }
 
       #links_landmarks {
         list-style: none;
-        padding: 50px;
+        padding: 0px;
+        margin: 0;
 
         .link_landmark {
           display: inline-block;
-          margin-top: 10px;
-          padding-top: 10px;
+          /*margin-top: 10px;*/
+          /*padding-top: 10px;*/
 
           img {
-            height: 100px;
+            height: 50px;
             margin-bottom: 10px;
 
             &#start_point {
@@ -440,8 +470,116 @@ img {
   }
 
   #bg_video {
-    height: 100%;
+    height: 80%;
     position: absolute;
     z-index: -1;
+    top: 180px;
+    left: -200px;
+  }
+
+  #youtube_video {
+    border: none;
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+  }
+}
+
+#mouse_animation {
+  .delay5 {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+
+  .floating {
+    animation: floating 1.5s infinite;
+    -webkit-animation: floating 1.5s infinite;
+    -moz-animation: floating 1.5s infinite;
+  }
+
+  a {
+    display: block;
+    height: 24px;
+    width: 24px;
+    float: left;
+
+    .ani {
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+#experience_map {
+  position: absolute;
+  margin: 10px auto;
+  -webkit-perspective: 500px;
+  z-index: 3000;
+  bottom: 20px;
+  right: 20px;
+
+  .sq {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    transition: .2s linear;
+    -webkit-transform: rotateY(0deg);
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #one {
+    background: white url("../static/images/silhouettes/belem_square.png") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(45deg);
+    &.active {
+      background: url("../static/images/silhouettes/belem_square_selected.png") no-repeat;
+      background-size: cover;
+      -webkit-transform: rotateY(0deg);
+    }
+  }
+
+  #two {
+    background: white url("../static/images/silhouettes/discoveries_square.png") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(-45deg);
+    &.active {
+      background: url("../static/images/silhouettes/discoveries_square_selected.png") no-repeat;
+      background-size: cover;
+      -webkit-transform: rotateY(0deg);
+    }
+  }
+
+  #three {
+    background: white url("../static/images/silhouettes/bridge_square.png") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(45deg);
+    &.active {
+      background: url("../static/images/silhouettes/bridge_square_selected.png") no-repeat;
+      background-size: cover;
+      -webkit-transform: rotateY(0deg);
+    }
+  }
+
+  #four {
+    background: white url("../static/images/silhouettes/praca_square.png") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(-45deg);
+    &.active {
+      background: url("../static/images/silhouettes/praca_square_selected.png") no-repeat;
+      background-size: cover;
+      -webkit-transform: rotateY(0deg);
+    }
   }
 }
