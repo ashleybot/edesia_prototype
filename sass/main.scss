@@ -158,10 +158,10 @@ img {
       color: #333;
 
       &:hover {
-        background-color: #aaa;
+        background-color: #ddd;
         color: white;
-        border-left: 4px solid teal;
-        border-right: 4px solid teal;
+        border-left: 4px solid #ddd;
+        border-right: 4px solid #0094d6;
       }
     }
   }
