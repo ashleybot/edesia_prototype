@@ -11,8 +11,50 @@ p.landmark_text {
    height:100%;
 }
 
+#landmark_interface {
+  position: fixed;
+  right: 10px;
+  width: 70px;
+  height: 35px;
+  z-index: 3001;
+  top: 45%;
+
+  #left_scroll {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: white url("../static/images/icons/icon-left.png");
+    background-size: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  #right_scroll {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: white url("../static/images/icons/icon-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
 /* now a whitedrop */
 .blackdrop {
+  height: 100%;
   /* Fallback for web browsers that don't support RGBa */
   background-color: rgb(255,255, 255);
   /* RGBa with 0.6 opacity */

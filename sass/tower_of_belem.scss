@@ -50,29 +50,11 @@ section {
 
 #instructions{
   width: 1280px;
-  top: 1050px;
   position: absolute;
   z-index: 1;
+  bottom: 11%;
+  left: 6%;
 }
-#instructions span{
-  width: 100%;
-  margin: auto;
-  display: block;
-}
-#arrow{
-  font-family: gil sans, arial, sans;
-  font-size: 10em;
-  top: -20px;
-  position: absolute;
-  margin: 0;
-  padding:0;
-  display: block;
-  transform:rotate(90deg);
-  -ms-transform:rotate(90deg); /* IE 9 */
-  -webkit-transform:rotate(90deg); /* Safari and Chrome */
-}
-
-
 
 // The heights of the layers control the scroll speed
 // So, the top layer is 15000px, then it will be 66% faster than a middle layer that is 10000px
@@ -176,7 +158,6 @@ section {
   top:0px;
   height: 100%;
   position: absolute;
-  
 }
 
 #conclusion{

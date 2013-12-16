@@ -30,7 +30,7 @@
       <li><img src="static/images/icons/vimeo.png"></img></li>
     </ul>
     <div id="experience_map">
-      <div class="sq" id="one">
+      <div class="sq active" id="one">
         <a href="tower-of-belem.html">
           <img src="static/images/silhouettes/belem_square.png">
         </a>
@@ -329,6 +329,11 @@
     </div>
   </div>
 
+  <div id="landmark_interface">
+    <div id="left_scroll"></div>
+    <div id="right_scroll"></div>
+  </div>
+
   <!-- Site Overlay -->
   <div class="site-overlay"></div>
 
@@ -338,15 +343,14 @@
         <h1>Tower of Belém</h1>
       </div>
       <div id="instructions">
-        <span id="arrow">&raquo;</span>
-        <!-- <div id="mouse_animation" class="delay5 floating">
-          <a class="btn ani" href="#intro">
+        <div id="mouse_animation">
+          <div class="icon ani floating" href="#intro">
             <img src="static/images/icons/arrow_down_icon.svg" width="32" height="32" alt="Arrow down" style="opacity: 1;">
-          </a>
-          <a class="btn ani" href="#intro">
+          </div>
+          <div class="icon ani floating" href="#intro">
             <img src="static/images/icons/mouse_icon.svg" width="32" height="32" alt="Scroll" style="opacity: 1;">
-          </a>
-        </div> -->
+          </div>
+        </div>
       </div>
 
       <div id="first_frame">
@@ -472,7 +476,7 @@
       }
       
       function scrollHandler(percentScroll){
-        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
+        var w = percentScroll * 1500; // times 1000 so that we can get it to a fine grained scroll, less is choppy
         var v = w / 14.01;
         var countOfFrames = 6;
         var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;

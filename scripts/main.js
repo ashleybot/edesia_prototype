@@ -114,12 +114,22 @@ window.onload = function(){
   // });
 
   // experience tab hover
-  // $("#tab").hover(function(){
-  //   $("#tab_content").toggleClass("active");
-  // });
-
   $(".sq").hover(function(){
     $(this).toggleClass("active");
+  });
+
+  //landmark pages activate scroll
+  $("#right_scroll").click(function(){
+    console.log("hello");
+    $("body").animate({
+      scrollTop: $(window).scrollTop() + 300
+    });
+  });
+
+  $("#left_scroll").click(function(){
+    $("body").animate({
+      scrollTop: $(window).scrollTop() - 300
+    });
   });
 };
 
