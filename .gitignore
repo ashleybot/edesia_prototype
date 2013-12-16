@@ -6,5 +6,6 @@ stylesheets/
 /db/
 /log/
 static/landmark_images/
+static/images/ship/
 .DS_Store
 video/

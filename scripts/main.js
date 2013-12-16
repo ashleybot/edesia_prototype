@@ -102,16 +102,19 @@ window.onload = function(){
   });
 
   //ship 3d thingie
-  // $("#threed").mousemove(function(e){
-  //   var pagewidth = window.innerWidth;
-  //   var numimages = 5;
-  //   var diff = Math.floor(pagewidth / numimages);
-  //   var img_num = Math.min(Math.floor(e.pageX/diff), 4);
-  //   if(img_num != App.prev_ship_imgnum) {
-  //     $("#ship").attr("src", "static/images/ship/" + img_num + ".png");
-  //   }
-  //   App.prev_ship_imgnum = img_num;
-  // });
+  $("#threed").mousemove(function(e){
+    var pagewidth = window.innerWidth;
+    var numimages = 50;
+    var diff = Math.floor(pagewidth / numimages);
+    var img_num = Math.min(Math.floor(e.pageX/diff), 50) + 407;
+    if(img_num != App.prev_ship_imgnum) {
+      if(img_num < 10) {
+        img_num = img_num.toString();
+      }
+      $("#ship").attr("src", "static/images/ship/test0" + img_num + ".png");
+    }
+    App.prev_ship_imgnum = parseInt(img_num);
+  });
 
   // experience tab hover
   $(".sq").hover(function(){
