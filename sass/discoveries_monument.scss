@@ -141,6 +141,12 @@ section {
   display: block;
   position: absolute;
   height: $screen-height;
+
+  .landmark_text {
+    padding: 60px;
+    padding-top: 45%;
+    font-size: 1.8em;
+  }
 }
 
 #sixth_frame {
@@ -178,20 +184,15 @@ section {
   top:0px;
   height: 100%;
   position: absolute;
-  
 }
 
 #conclusion{
-  width: 300px;
-  left: 9700px;
+  width: 90px;
+  left: 9910px;
   display: block;
   position: absolute;
   height: 768px;
 }
-
-
-
-
 
 ol {
   list-style: none;

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Discoveries Monument | Eat & Travel</title>
+	<title>The Discoveries | Eat & Travel</title>
     <link rel="stylesheet" href="stylesheets/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/example.css" />
@@ -366,9 +366,9 @@
 
   <!-- Site Overlay -->
   <div class="site-overlay"></div>
-    
+
   <div class="container">
-    
+
     <div id="top_layer" class="scroll">
       <div id="intro_title">
         <h1>The Discoveries</h1>
@@ -383,43 +383,40 @@
           </div>
         </div>
       </div>
-        
+
       <div id="first_frame">
         <ol id="people_walking_frame_list" class="frame-list">
           <li class="active"></li>
         </ol>
       </div>
-        
+
       <div id="second_frame" class="tile_numbers">
-        <div class="blackdrop" style="height:100%;">
-          <p class="landmark_text">
-            The Discoveries Monument was built in 1960 to commemorate the 500th anniversary of the death of Prince Henry the Navigator.  
+        <div class="blackdrop" style="margin: 28% auto; width: 80%">
+          <p class="landmark_text" style="font-size: 1.4em; padding: 75px">
+            Monument to The Discoveries was built in 1960 to commemorate the 500th anniversary of the death of Prince Henry the Navigator.
           </p>
         </div>
       </div>
-      
+
       <div id="fourth_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6465.jpg" alt="web_IMG_6465" height="768">
       </div>
-        
-        
+
       <div id="sixth_frame">
         <ol id="river_boat_pan_frame_list" class="frame-list">
           <li class="active"></li>
         </ol>
-      </div>  
-      
+      </div>
+
       <div id="ninth_frame" class="tile_starbursts">
-        <div class="blackdrop" style="height:100%">
-        <p class="landmark_text" style="padding-top: 32%">
-          Among the historical figures represented in this sculpture of a ship are King Manuel I, poet Camoes, Vasco da Gama, Magellan, Cabral, and Prince Henry the Navigator at the prow.
-        </p>
+        <div class="blackdrop" style="width: 90%; margin: 40% auto">
+        <p class="landmark_text" style="font-size: 1.4em; padding-right: 3%; padding-left: 3%">Among the historical figures represented in this sculpture of a ship are King Manuel I, poet Camoes, Vasco da Gama, Magellan, Cabral, and Prince Henry the Navigator at the prow.</p>
         </div>
       </div>
-        
+
       <div id="conclusion" class="checkerboard">
         <div class="link_landmark blackdrop next_landmark" style="height:100%;padding-top:80%;">
-          <div style="padding-left:50px;">
+          <div style="padding-left:50px; display: none">
           <a href="april-25th-bridge.html">
             <img src="static/images/silhouettes/bridge.png" alt="bridge" width="200">
           </a>
@@ -428,45 +425,44 @@
         </div>
       </div>
     </div>
-    
-      
+
     <div id="middle_layer" class="scroll">
       <div id="third_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6484.jpg" alt="web_IMG_6484" height="768">
       </div>
-      
+
       <div id="eighth_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6443.jpg" alt="web_IMG_6443" height="768">
       </div>
-      
+
 
     </div>
 
 
     <div id="back_layer" class="scroll">
-      
+
       <div id="fifth_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6477.jpg" alt="web_IMG_6477" height="768">
-      </div>      
-      
+      </div>
+
       <div id="fifth_text_frame" class="tile_swirls">
         <div class="blackdrop" style="height: 100%;">
         <p class="landmark_text">
-            There is a mosaic on the pavement in front of the monument of a compass and world map showing the routes taken by Portuguese explorers.
+            The mosaic on the pavement in front of the monument shows a compass and a world map depicting all the routes taken by the Portuguese explorers.
         </p>
         </div>
       </div>
-      
+
       <div id="seventh_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6446.jpg" alt="web_IMG_6446" height="768">
       </div>
-      
+
       <div id="tenth_frame">
         <img src="static/landmark_images/discoveries_monument/web_IMG_6433.jpg" alt="web_IMG_6433" height="768">
       </div>
-      
+
     </div>
-  
+
   </div>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp0y-YTYzsrysRXXNoyJm_7e_REnCMmP4&sensor=true">
   </script>
@@ -479,7 +475,7 @@
   <script type="text/javascript" src="scripts/vendor/jquery.jInvertScroll.js"></script>
   <script type="text/javascript">
     (function($) {
-      
+
       var frame_count = 119;
       function create_frames(id)
       {
@@ -490,17 +486,17 @@
                 .appendTo(frameList);
         }
       }
-      
+
       create_frames('#people_walking_frame_list');
       create_frames('#river_boat_pan_frame_list');
-      
+
       var $win = $(window),
         $firstFrameAnimations = $('#people_walking_frame_list li'),
         $sixthFrameAnimations = $('#river_boat_pan_frame_list li'),
         isFirefox = navigator.userAgent.match(/Firefox/) !== null;
-      
+
         var animationHandler = function() {
-  
+
           // quick fix to disable turn animation in Firefox
           if ( isFirefox == false) {
               frameHandler();
@@ -509,23 +505,23 @@
 
         $(document).scroll(animationHandler);
         $win.resize(animationHandler);
-        
+
       function frameHandler(percent) {
         var w = percent * 1000;
         var firstFrameAnimationStart = 0,
           firstFrameAnimationEnd = 147,
           sixthFrameAnimationStart = 450,
           sixthFrameAnimationStop = 742;
-        
+
         // hide the intro title
         $('#intro_title').css('opacity', 100 - (percent * 200));
-        
+
         // #people_walking_frame_list starts at 0
-        // #river_boat_frame_list starts at 
+        // #river_boat_frame_list starts at
         var speed = 1.8;
         var v = w / speed;
         var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
-        
+
         if ((w > firstFrameAnimationStart) && (w < firstFrameAnimationEnd)) {
         console.log(w);
           if (choice >= 0 && choice < frame_count) {
@@ -541,10 +537,10 @@
                   .removeClass('active')
                   .eq(nextFrame).addClass('active');
           }
-          
+
         }
       }
-      
+
       function scrollHandler(percentScroll){
         var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
         var v = w / 14.01;
@@ -555,7 +551,7 @@
           make_base();
         } else {
         }
-        
+
       }
       $.jInvertScroll(['.scroll','#interface_overlay'],        // an array containing the selector(s) for the elements you want to animate
           {
