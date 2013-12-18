@@ -35,6 +35,9 @@ section {
 }
 
 #intro_title h1{
+  position: absolute;
+  left: 600px;
+  top: 40px;
   width: 1000px;
   margin: auto;
   z-index: 1001;
@@ -51,7 +54,9 @@ section {
   top: 550px;
   position: absolute;
   z-index: 1;
+  left: 6%;
 }
+
 #instructions p{
   width: 100px;
   margin: auto;

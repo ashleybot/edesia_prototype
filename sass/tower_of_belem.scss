@@ -7,16 +7,12 @@ html, body{
   background-color: #000;
 }
 
-
-
 section {
   position: relative;
   height: $screen-height;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
-
-
 
 .menu-btn{
   // don't define top, left, width, height, position here or it will break, it must be inline style and set with javascript
@@ -161,8 +157,8 @@ section {
 }
 
 #conclusion{
-  width: 300px;
-  left: 9700px;
+  width: 90px;
+  left: 9910px;
   display: block;
   position: absolute;
   height: $screen-height;

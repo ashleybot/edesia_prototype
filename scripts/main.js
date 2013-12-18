@@ -95,10 +95,10 @@ window.onload = function(){
         $("#ship").attr("src", "static/images/ship/final0" + App.prev_ship_imgnum + ".png");
       }
 
-      var move = Math.min(e.pageX - 600, 0).toString() + "px";
-      $("#youtube_video").css({
-        "left": move
-      });
+      // var move = Math.min(e.pageX - 600, 0).toString() + "px";
+      // $("#youtube_video").css({
+      //   "left": move
+      // });
     }
     App.prev_ship_imgnum = parseInt(img_num);
   });

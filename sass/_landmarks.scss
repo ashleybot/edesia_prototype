@@ -54,7 +54,6 @@ p.landmark_text {
 
 /* now a whitedrop */
 .blackdrop {
-  height: 100%;
   /* Fallback for web browsers that don't support RGBa */
   background-color: rgb(255,255, 255);
   /* RGBa with 0.6 opacity */
@@ -73,37 +72,36 @@ p.landmark_text {
 
 .checkerboard {
   background-color: #000;
-  background: url(#{$image-directory-path}photos_of_tiles/tile_checkerboard.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/tile_checkerboard_2.jpg);
+  background-size: cover;
 }
 
 .checkerboard p{
   opacity: 1;
-  
 }
 
 .tile_numbers {
   background-color: #000;
-  background: url(#{$image-directory-path}photos_of_tiles/DSC04218.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03942.JPG);
+  background-size: cover;
 }
 
 .tile_swirls {
   background-color: #000;
-  background: url(#{$image-directory-path}photos_of_tiles/DSC03956.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03956.JPG);
+  background-size: cover;
 }
 
 .tile_starbursts{
   background-color: #000;
-  background: url(#{$image-directory-path}photos_of_tiles/DSC03974.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03974.JPG);
+  background-size: cover;
 }
 
 .tile_maze {
   background-color: #fff;
-  background: url(#{$image-directory-path}photos_of_tiles/DSC03906.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03906.JPG);
+  background-size: cover;
 }
 
 .tile_maze p{
