@@ -43,6 +43,10 @@ img {
 
 ::-webkit-scrollbar-thumb:vertical {
   background: #eee url("../static/images/icons/scrollbar_thumb_bg.png") no-repeat center;
+
+  &:hover {
+    cursor: move;
+  }
 }
 
 .divider {
@@ -74,12 +78,14 @@ img {
   width: 120px;
   top: 235px;
   height: 40px;
-  opacity: 0.5;
-  background-color: white;
   z-index: 2000;
   padding: 0;
-  opacity: 1;
   box-shadow: 0 8px 6px -6px black;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 
   li {
     float: left;
@@ -88,9 +94,10 @@ img {
 
     img {
       width: 40px;
+      -webkit-filter: grayscale(1);
 
       &:hover {
-        -webkit-filter: hue-rotate(232deg);
+        -webkit-filter: grayscale(0);
       }
     }
   }
@@ -114,7 +121,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 10px;
-    margin-top: 35px;
+    margin-top: 15px;
 
     &.logo_menu {
       background: url("../static/images/eatntravel_lisbon_2.png");
@@ -139,8 +146,8 @@ img {
     list-style: none;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 11px;
+    font-size: 1.1em;
     padding: 0;
 
     li {
@@ -148,6 +155,9 @@ img {
       user-select: none;
       -webkit-user-select: none;
       color: #333;
+      font-family: 'Marcellus SC', serif;
+      font-size: 1.2em;
+      padding-bottom: 3px;
 
       &:hover {
         background-color: #ddd;
@@ -308,6 +318,11 @@ img {
     }
   }
 
+  #menu_header {
+    font-weight: 400;
+    font-size: 2em;
+  }
+
   #menu_sections {
     display: none;
     list-style: none;
@@ -325,7 +340,7 @@ img {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 1.5%;
-    height: 442px;
+    height: 423px;
     overflow-y: scroll;
 
     .menu_sections {
@@ -338,7 +353,8 @@ img {
       .section_title {
         float: left;
         width: 30%;
-        font-size: 1.2em;
+        font-size: 1.4em;
+        font-weight: 300;
       }
 
       .section_dishes {
@@ -418,34 +434,129 @@ img {
 #card_location {
   #location_map {
     width: 100%;
-    height: 400px;
+    height: 66%;
   }
 
-  #location_info {
-    li {
-      list-style: none;
-      border: 1px solid #eee;
-      width: 400px;
-      margin: 20px auto;
+  #location_title {
+      width: 50%;
+      line-height: 150px;
+      font-size: 2em;
+      h3 {
+        font-weight: 300;
+      }
+  }
+
+  #location_address {
+    width: 25%;
+    padding-top: 39px;
+    padding-right: 30px;
+    font-size: 1.2em;
+    text-align: right;
+  }
+
+  #location_enquiry {
+    width: 25%;
+    padding-top: 50px;
+    font-size: 1em;
+    text-align: left;
+
+    .phone {
+      img {
+        width: 20px;
+      }
     }
+
+    .email {
+      img {
+        width: 18px;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .location_info {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 150px;
   }
 }
 
 #card_about {
   img {
     width: 500px;
-    float: right;
-    margin-top: 90px;
-    margin-right: 20px;
   }
 
-  p {
-    width: 403px;
-    margin-top: 140px;
-    margin-bottom: 10px;
-    margin-left: 45px;
-    text-align: left;
-    font-size: 1.2em;
+  .wrap {
+    width: 600px;
+    margin: 0 auto;
+
+    .left_col {
+      float: left;
+      width: 280px;
+      margin: 0;
+      margin-top: 46px;
+      padding: 0;
+
+      p {
+        margin-bottom: 10px;
+        text-align: left;
+      }
+    }
+
+    .right_col {
+      float: right;
+      width: 280px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      h3 {
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      .text {
+        margin-top: 5px;
+      }
+
+      .address {
+        text-align: left;
+        margin-left: 77px;
+
+        &:before {
+          display: inline-block;
+          content: "";
+          background: url("../static/images/icons/home.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          top: 25px;
+          left: -30px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .email {
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 48px;
+
+        img {
+          width: 18px;
+          margin-right: 7px;
+        }
+      }
+      .phone {
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 47px;
+        img {
+          width: 20px;
+          margin-right: 6px;
+        }
+      }
+    }
   }
 }
 
@@ -535,6 +646,7 @@ img {
     background-color: white;
     transition: .2s linear;
     -webkit-transform: rotateY(0deg);
+    margin-right: 5px;
 
     img {
       width: 100%;
@@ -542,6 +654,30 @@ img {
 
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  #zero {
+    position: absolute;
+    right: 350px;
+    background-color: rgba(0,0,0,0);
+    display: block;
+    text-align: right;
+    line-height: 40px;
+    height: 42px;
+    margin-top: 20px;
+    width: 40px;
+    border-radius: 999px;
+    margin-right: 10px;
+
+    &:hover {
+      cursor: default;
+    }
+
+    img {
+      width: 40px;
+      box-shadow: 1px 1px 1px 1px #222;
+      border-radius: 999px;
     }
   }
 
