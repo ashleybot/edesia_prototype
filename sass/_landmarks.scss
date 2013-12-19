@@ -111,6 +111,6 @@ p.landmark_text {
 
 .tile_star {
   background-color: #000;
-  background: url(#{$image-directory-path}photos_of_tiles/DSC03981.JPG) repeat-y;
-  background-size: contain;
+  background: url(#{$image-directory-path}photos_of_tiles/DSC03981.JPG);
+  background-size: cover;
 }

@@ -89,7 +89,7 @@ window.onload = function(){
     var diff = Math.floor(pagewidth / numimages);
     var img_num = Math.min(Math.floor(e.pageX/diff), 50) + 407;
     if(img_num != App.prev_ship_imgnum) {
-      var counter = img_num > App.prev_ship_imgnum ? 1 : -1;
+      var counter = img_num < App.prev_ship_imgnum ? -1 : 1;
       while(img_num - App.prev_ship_imgnum != 0) {
         App.prev_ship_imgnum = App.prev_ship_imgnum + counter;
         $("#ship").attr("src", "static/images/ship/final0" + App.prev_ship_imgnum + ".png");

@@ -109,11 +109,15 @@ img {
   position: fixed;
   left: 3%;
   background-color: white;
-  opacity: 1;
+  opacity: 0.8;
   color: black;
   z-index: 2000;
   top: 0;
   box-shadow: 0 8px 6px -6px black;
+
+  &:hover {
+    opacity: 1;
+  }
 
   #logo {
     left: 5%;
@@ -684,31 +688,20 @@ img {
   }
 
   #one {
-    background: white url("../static/images/silhouettes/belem_square.png") no-repeat;
+    background: white url("../static/images/silhouettes/praca_square.png") no-repeat;
     background-size: cover;
     -webkit-transform: rotateY(45deg);
     &.active {
-      background: url("../static/images/silhouettes/belem_square_selected.png") no-repeat;
+      background: url("../static/images/silhouettes/praca_square_selected.png") no-repeat;
       background-size: cover;
       -webkit-transform: rotateY(0deg);
     }
   }
 
   #two {
-    background: white url("../static/images/silhouettes/discoveries_square.png") no-repeat;
-    background-size: cover;
-    -webkit-transform: rotateY(-45deg);
-    &.active {
-      background: url("../static/images/silhouettes/discoveries_square_selected.png") no-repeat;
-      background-size: cover;
-      -webkit-transform: rotateY(0deg);
-    }
-  }
-
-  #three {
     background: white url("../static/images/silhouettes/bridge_square.png") no-repeat;
     background-size: cover;
-    -webkit-transform: rotateY(45deg);
+    -webkit-transform: rotateY(-45deg);
     &.active {
       background: url("../static/images/silhouettes/bridge_square_selected.png") no-repeat;
       background-size: cover;
@@ -716,12 +709,23 @@ img {
     }
   }
 
+  #three {
+    background: white url("../static/images/silhouettes/discoveries_square.png") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(45deg);
+    &.active {
+      background: url("../static/images/silhouettes/discoveries_square_selected.png") no-repeat;
+      background-size: cover;
+      -webkit-transform: rotateY(0deg);
+    }
+  }
+
   #four {
-    background: white url("../static/images/silhouettes/praca_square.png") no-repeat;
+    background: white url("../static/images/silhouettes/belem_square.png") no-repeat;
     background-size: cover;
     -webkit-transform: rotateY(-45deg);
     &.active {
-      background: url("../static/images/silhouettes/praca_square_selected.png") no-repeat;
+      background: url("../static/images/silhouettes/belem_square_selected.png") no-repeat;
       background-size: cover;
       -webkit-transform: rotateY(0deg);
     }
